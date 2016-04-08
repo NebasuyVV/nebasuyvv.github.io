@@ -283,6 +283,38 @@ h3{
     margin-top: 4%;
 }
 
+.none .footer a{
+    background: none;
+    color: none;
+    border-bottom: none;
+    border-top: none;
+    border-left: none;
+    background: none;
+    width: auto;
+    padding: none;
+    padding-left: 0;
+    padding-right: 0;
+    min-width: 30px;
+}
+
+.none .footer a:hover {
+    color: none;
+    border-bottom: none;
+    border-left: none;
+    background: none;
+    padding: none;
+    padding-left: 0;
+}
+
+.none a{
+    padding: none;
+}
+
+.none .footer a:before {
+    height: 0;
+    padding-left: 5px;
+}
+
 .copyright{
     padding-right: 5px;
     border-right: 2.5px solid #010;
@@ -300,6 +332,7 @@ svg.facebook:hover {fill: #3b5998;}
 svg.linkedin:hover {fill: #007bb6;}
 svg.twitter:hover {fill: #00aced;}
 svg.googleplus:hover {fill: #DD4B39;}
+svg.github:hover {fill: #4183c4;}
 
 /* Block resumes */
 
@@ -1528,6 +1561,13 @@ textarea{
   animation-name: bounceInLeft;
 }
 
+@media only screen and (max-width: 355px)
+{
+    .inf table{
+        font-size: 85%;
+    }
+}
+
 /* Screen <= 480px */
 @media only screen and (max-width : 480px) 
 {
@@ -1536,7 +1576,7 @@ textarea{
         margin-top: 20px;
         position: relative;
     }    
-    
+        
     #hidden-footer{
         display: none;
     }
@@ -1589,7 +1629,7 @@ textarea{
     -webkit-flex-wrap: wrap;
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
-	min-width:200px;
+	min-width:250px;
     max-width: 90%;
     height: auto;
 }  
