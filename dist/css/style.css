@@ -1573,7 +1573,7 @@ textarea{
 {
 
     #home, #resume, #skills, #portfolio, #contact {
-        margin-left: 5%;
+        margin-left: 0;
     }
     .footer{
         margin-top: 20px;
