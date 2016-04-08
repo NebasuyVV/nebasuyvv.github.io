@@ -1572,6 +1572,9 @@ textarea{
 @media only screen and (max-width : 480px) 
 {
 
+    #home, #resume, #skills, #portfolio, #contact {
+        margin-left: 5%;
+    }
     .footer{
         margin-top: 20px;
         position: relative;
@@ -1630,7 +1633,8 @@ textarea{
         -ms-flex-wrap: wrap;
             flex-wrap: wrap;
 	min-width:250px;
-    max-width: 90%;
+    max-width: 100%;
+    width: 95%;
     height: auto;
 }  
                        
