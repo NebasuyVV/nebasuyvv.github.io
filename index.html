@@ -11,11 +11,17 @@
          <script src="dist/js/style.js"></script>
          <script src="dist/js/hammer.min.js"></script>
          <script src="dist/js/hammer-time.min.js"></script>
+        <script type="text/javascript" src="js/jquery.jgrowl.js"></script>
+        <script type="text/javascript" src="dist/js/feedback.js"></script>
+        <script type="text/javascript" src="dist/js/jquery.arcticmodal.js"></script>
+        <script type="text/javascript" src="dist/js/jquery.jgrowl.js"></script>
          <!-- Підключення файла стилів -->
         <link rel="stylesheet"  href="dist/css/style.css">
          <!--<link rel="stylesheet"  href="dist/css/animate.css">-->
         <link rel="stylesheet"  href="dist/css/hint.css">
         <link href="dist/css/hover.css" rel="stylesheet" media="all">
+        <link href="dist/css/jquery.arcticmodal.css" rel="stylesheet" media="all">
+        <link href="dist/css/jquery.jgrowl.css" rel="stylesheet" media="all">
         <!-- Підключення файла стилів js -->
         <script>
 			   $(function() {
@@ -1001,14 +1007,23 @@ Your talent me lius quod i legu saepius. Claritas est etiam processus dynamicus,
                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.264484660991!2d2.773619215674867!3d48.87223437928884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e61d19ca7ae2bd%3A0x57faf8cb6310e660!2z0JTRltGB0L3QtdC50LvQtdC90LQ!5e0!3m2!1suk!2sua!4v1448549198645" frameborder="0" scrolling="no" allowfullscreen></iframe>
                     </div>
                 </div>
+                <div style="display: none;">
+    <div class="box-modal" id="small-modal">
+        <div class="modal-close arcticmodal-close">x</div>
+        <div class="modal-content-box">
+            <div class="modal_btn">Вызов формы в модальном окне</div>
+        </div>
+    </div>
+</div>
+                
                 <div class="send">
                     <form id="form">
-                        <input class="inForm" type="text" required="required" id="wname" aria-required="true" aria-invalid="true" placeholder=" Your name..">
-                        <input class="inForm" type="email" required="required" id="wemail" aria-required="true" aria-invalid="true"  placeholder=" Your e-mail..">
+                        <input class="inForm" type="text" name="name" required="required" id="wname" aria-required="true" aria-invalid="true" placeholder=" Your name..">
+                        <input class="inForm" type="email" name="tell" required="required" id="wemail" aria-required="true" aria-invalid="true"  placeholder=" Your e-mail..">
                         <p class="submit hvr-bounce-in"><button type="submit">Submit</button></p>			
                     </form>
                     <form>
-                    <textarea name="your-message" required="required" rows="5" aria-required="true" aria-invalid="true"  placeholder=" Your message.."></textarea>
+                    <textarea name="send" required="required" rows="5" aria-required="true" aria-invalid="true"  placeholder=" Your message.."></textarea>
                     </form>
                 </div>
             </div>
@@ -1080,19 +1095,11 @@ Your talent me lius quod i legu saepius. Claritas est etiam processus dynamicus,
             </a>
         </div>
             <script type="text/javascript">
-                $(document).ready(function(){
-                    $("#form").submit(function() { //устанавливаем событие отправки для формы с id=form
-                            var form_data = $(this).serialize(); //собераем все данные из формы
-                            $.ajax({
-                            type: "POST", //Метод отправки
-                            url: "dist/send.php", //путь до php фаила отправителя
-                            data: form_data,
-                            success: function() {
-                                   //код в этом блоке выполняется при успешной отправке сообщения
-                                   alert("Ваше сообщение отпрвлено!");
-                            });
-                    });
-                });    
+                $(document).ready(function() {
+                $(document).on('click', '.modal_btn', function(){
+                        $('#small-modal').arcticmodal();
+                });
+        });
             </script>
     </body>
 </html>
