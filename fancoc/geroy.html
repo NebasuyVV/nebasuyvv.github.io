@@ -1,0 +1,1353 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <!-- Meta, title, CSS, favicons, etc. -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Фан-сайт до культової гри Clash of Clans від компанії Supercell. Грай та приведи свій клан до перемоги!">
+     <meta name="keywords" content="Ключові слова до сторінки">
+     <meta name="author" content="Автор Небасуй В.В. - (Author - Nebasuy Vadym V.)">
+     <link rel="icon" href="favicon.ico">
+     <title>Clash of Clans | Ukraine</title>
+
+    <!-- CSS-ядро Bootstrap -->
+    <link rel="stylesheet"  href="/dist/css/bootstrap.css" >
+    <!-- Теми Bootstrap -->
+    <link href="/dist/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Підібрані стилі саме для цього шаблона -->
+    <link href="/dist/css/theme.css" rel="stylesheet">
+    <!-- Стиль для галереї -->
+    <link href="/dist/css/unite-gallery.css"  type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/sass-compiled.css" />
+    <!-- Це чисто для цілей налагодження. Вам не потрібно копіювати цих два рядки! -->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    
+    <script type='text/javascript' src="/dist/js/jquery-11.0.min.js"></script>
+    <script type='text/javascript' src="/dist/js/unitegallery.min.js"></script>
+    <script type='text/javascript' src="/dist/js/ug-theme-tiles.js"></script>
+    <!-- Лічильники Яндекс та Гугл -->
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</head>
+
+  <body role="document">
+    <!-- Фіксована навігаційна панель -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Відкрити меню</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+            <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Герої</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="barbarian-king.html">Король Варварів </a></li>
+                                <li> <a tabindex="-1" href="#">Королева Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Варвар</a></li>
+                                <li> <a tabindex="-1" href="#">Лучниця</a></li>
+                                <li> <a tabindex="-1" href="#">Гоблін</a></li>
+                                <li> <a tabindex="-1" href="#">Гігант</a></li>
+                                <li> <a tabindex="-1" href="#">Стінобій</a></li>
+                                <li> <a tabindex="-1" href="#">Повітряна куля</a></li>
+                                <li> <a tabindex="-1" href="#">Маг</a></li>
+                                <li> <a tabindex="-1" href="#">Цілителька</a></li>
+                                <li> <a tabindex="-1" href="#">Дракон</a></li>
+                                <li> <a tabindex="-1" href="#">П.Е.К.К.А</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Темна казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Міньйон</a></li>
+                                <li> <a tabindex="-1" href="#">Вершник на кабані</a></li>
+                                <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                <li> <a tabindex="-1" href="#">Голем</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                <li> <a tabindex="-1" href="#">Відьма</a></li>
+                            </ul>
+                        </li>
+            <li><a href="#"> Будівельник</a></li>
+            <li><a href="#"> Житель</a></li>
+          </ul>
+      </li>
+              <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Захисні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                <li> <a tabindex="-1" href="#">Пастки</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Військові</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Ресурсні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Інші</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                            </ul>
+                        </li>
+            <li><a href="#">Ратуша (Town Hall)</a></li>
+          </ul>
+      </li>
+            <li class="hidden-sm hidden-md"><a href="shems.html">Розстановки</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="fan_baz.html">Цікаві бази</a></li>
+                <li><a href="fan-art.html">Фан-арт</a></li>
+                <li><a href="mems.html">Меми</a></li>
+                <li><a href="#">Інше</a></li>
+              </ul>
+            </li>
+           <li class="hidden-sm hidden-md"><a href="help-faq.html">Допомога</a></li>
+           <li class="hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+           <li></li>
+            <li>
+                <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                <!-- Блок переключення мов
+                   <div class="flag" style="vertical-align:middle">
+                    <a href="">
+                    <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                    <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                    <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                    </a>
+                    <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                    <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                    </a>
+                </div>
+                -->
+            </li>
+    </ul>
+      <!--   <form class="navbar-form navbar-left" role="search">
+            <div class="form-group" style="vertical-align:middle;">
+              <input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+            </div>
+        <button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button> 
+        </form> -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- Кінець верхньої навігаційної панелі -->
+<div class="container">
+    <div class="row" style="margin-top:70px">
+        <div class="col-md-4" >
+            <div class="slides">
+                <ul> <!-- Слайды -->
+                    <li>
+                        <img src="/im/barbarian_king/Barbarian_king_lvl20.png" alt="Barbarian King Lvl20" width="300px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/barbarian_king/barbarian_king_angry.png" alt="Barbarian King Angry" width="300px"/>
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/barbarian_king/barbarian_king_draw.png" alt="Barbarian King Draw" width="300px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/barbarian_king/Barbarian_king_lvl5.png" alt="Barbarian King Lvl5" width="300px"/>
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-1" style="text-align: center;margin-top: inherit;">
+            <script type="text/javascript">(function() {
+              if (window.pluso)if (typeof window.pluso.start == "function") return;
+              if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+              }})();
+            </script>
+            <div class="pluso" data-background="transparent" data-options="medium,square,line,vertical,counter,theme=05"               data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2 class="text-success">
+                <strong><i><tt> Король Варварів </tt></i></strong>
+                <img  src="/im/flat_icons/barbarian_king.png" height="50px" align="right"/>            
+            </h2> 
+            <hr>
+            <p style="text-align:center"> <i>«<strong>Король Варварів</strong> - один із самих могутніх і великих героїв 
+                в <strong>Clash of Clans</strong>. Цей потужний варвар може як захищати Ваше поселення так і допомагати                   Вам в атаках на інші, але йому також потрібний і відпочинок для віднговлення сил. Також Король Варварів                   може керувати та вести Ваше військо варварів до перемоги.» </i></p>
+            <hr>
+            <div class="row" style="text-align:center">
+                <div class="col-md-3" style="text-align:-webkit-right">
+                <img class="img-responsive" style="width:120px;height:auto;" src="im/barbarian_king/barbarian-king-lvl1-9.png" alt="Король Варварів лвл 1-9">
+                </div>
+                <div class="col-md-6">
+                    <table align="center" summary="таблиця лвл героя Варвара Короля">
+                    <th>    
+                    <div class="glyphicon glyphicon-arrow-right" style="width:65px;font-size: xx-large;"></div>
+                    </th>
+                    <th> 
+                    <img class="img-responsive" style="width:128px;height:auto;" src="im/barbarian_king/barbarian-king-lvl10.png" alt="Король Варварів лвл 10-20">
+                    </th>
+                    <th style="text-align: -webkit-right;">
+                    <div class="glyphicon glyphicon-arrow-right" style="width:65px;font-size: xx-large;"></div>
+                    </th>
+                    </table>
+                </div>
+                <div class="col-md-3" style="text-align:-webkit-left">
+                <img class="img-responsive" style="width:120px;height:auto;" src="im/barbarian_king/barbarian-king-lvl20.png" alt="Король Варварів лвл 20+">
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Банер сайту 
+        <div class="thumbnail" >
+            <img src="/im/baner_2.jpg" style="height:75px;" alt="Банер_2"> 
+        </div>
+    <!-- Основний запис -->
+    <div class="thebasic">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#Опис" data-toggle="tab">Опис</a></li>
+          <li role="presentation"><a href="#Характеристики" data-toggle="tab" >Характеристики</a></li>
+          <li role="presentation"><a href="#цікавіфакти" data-toggle="tab" >Цікаві факти</a></li>
+          <li role="presentation"><a href="#фотовідео" data-toggle="tab">Фото та відео</a></li>
+        </ul>
+        <div class="tab-content">
+              <div class="tab-pane active" id="Опис" style="text-align: justify;">
+                  <div>
+                      <p><strong>Король Варварів </strong>могутній варвар, який поведе за собою інших, Ваших варварів,                              тому якщо в совїх боях Ви використовуєте варварів то Король буде незамінним для Вас.
+                        <img src="im/coc_logo.png" vspace="5" hspace="15" style="float:right;max-width: 250px;">
+                      </p>
+                      <p>Король Варварів перший герой в грі доступний з ТХ7, купується і апгрейдится за чорний елексир.
+                         Він автоматично викликається один раз після побудови його вівтаря, який стоїть 10000 Темного еліксиру.Один з найбільш сильних і здорових воїнів у грі, з поведінки на полі він копіює варварів або ПЕКК, так як і інші він перебірливий у цілях.<br> Король безсмертний, він не гине і після сну знову готовий до бою, але чим вище рівень короля тим вище час сну для відновлення. 
+                        Король серйозна сила на полі і з прокачуванням стає все серйозніше і серйозніше. З 1 по 30 рівень атака і здоров'я збільшуються на 4%, а з 31 по 40 на 2%. Король може захищати вашу село під час нападу. Максимальний рівень його і іншої героїні Clash of Clans 40.Король тепер тільки захищає територію навколо своєї платформи і відступає, якщо виманити його занадто далеко від неї.
+                      </p>
+                      <img src="im/two_king.png" vspace="5" hspace="5" style="float:left;max-width: 420px;">
+                      <p>
+                      <b>Відновлення здоров'я</b><br>
+Король Варварів безсмертний юніт, тому його можна викликати тільки один раз. Однак якщо він поранений або падає в бою, йому потрібно відновити своє здоров'я і відпочити деякий час, перш ніж він зможе знову стати в стрій. Якщо ви атакуєте село в той момент, коли Король Варваров все ще відновлюється, то він пропустить цю битву. Кількість часу, потрібного йому для відновлення, і здоров'я, втрачене їм до кінця бою знаходяться в прямопропорційна залежності. <br>Якщо Король не пошкоджений, або якщо його повністю зцілили ще до кінця битви, то він відразу готовий вступити в бій. Якщо ж Король поранений або падає в бою, то йому необхідно поспати деякий час, щоб повністю відновитися.
+                      </p>
+                      <p>
+                        <b>Особливості розвитку</b><br>
+                        Король Варварів зазнає візуальні зміни на 10 і 20 рівнях.<br>
+                        Спочатку Король схожий на гігантського Варвара у срібній короні, срібною рукавиці і срібному наплічнику з шипом. У його руках тупий меч з кам'яною рукояттю.<br>
+                        На 10 рівні рукавиця стає золотий.<br>
+                        На 20 рівні золотим стає і наплічник Короля.<br>
+                      </p>
+                                        <p>
+                  <b>Переваги і недоліки Короля Варварів</b><br> 
+                    Переваги Короля зрозумілі він володіє величезною фізичною силою і богатирським здоров'ям, що робить                       його дуже корисним воїном. Більше того коли Ви натискаєте кнопку люті, Король і навколишні його                           варвари стають просто оскаженілими.)))<br>
+                    Також дуже важливим моментом те, що якщо короля поставити поряд з аїр дефом, то в момент підльоту                         драконів до аїр Дефу король може відвернути на себе увагу, оскільки спочатку орієнтовані на знищення                       героїв, а потім вже інших будівель і споруд. <br>
+                    У мінус цього юниту можна записати невисоку швидкість пересування (у звичайному режимі) і концентрацію                     тільки на одній меті. Король атакує тільки одного юніта, тому проти великих груп застосовувати його                       можна тільки за відповідної підтримки з боку інших персонажів, наприклад, купи варварів або лучниць за                     спиною. <br>
+                    Не допоможе він і при відображенні повітряних атак. Нічого, крім величезного меча, у нього немає, а                       тому за нападом з повітря він може лише стежити, "розвівши безпорадно руки". Однак, знаючи його сильні                     і слабкі сторони, можна без зусиль знайти йому місце в своїх побудовах атаки і оборони. Варіантів                         використання може бути багато, розглянемо основні.
+                 </p>
+                      На нашому сайті Ви можете переглянути характеристики про Короля Варварів в атаці, обороні, в стані відновлення та цікаві факти. А також Ви можете знайти такуж інформацію і по інших персонажів гри Clash of Clans.
+                  </div>
+              </div>
+              <div class="tab-pane" id="Характеристики">
+              <div style="margin-top: 10px; margin-bottom:10px; border:0px ridge Green; padding: 10px; font-size: 100%; -moz-border-radius: 15px; border-radius:15px; -webkit-border-radius:15px; border-color: silver; color:black; background-color: whitesmoke;text-align: center">
+                <table class="wikitable" border="0" cellpadding="1" cellspacing="1" style="width: 100%; text-align: center;">
+                <tbody><tr>
+                <th scope="col" style="text-align: center;">Приорітетна ціль
+                </th><th scope="col" style="text-align: center;">Тип атаки <img src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;path-prefix=ru&amp;format=webp" alt="Тип урона" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Damagetype.png" data-image-name="Damagetype.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;path-prefix=ru" width="30" height="22" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;amp;path-prefix=ru"    alt="Тип урону"    class=""      data-image-key="Damagetype.png"   data-image-name="Damagetype.png"       width="30"     height="22"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Швидкість переміщення
+                </th><th scope="col" style="text-align: center;">Швидкість атаки <img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;path-prefix=ru&amp;format=webp" alt="Скорость атаки" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Attackspeed.png" data-image-name="Attackspeed.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;path-prefix=ru" width="40" height="20" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;amp;path-prefix=ru"    alt="Швидкість атаки"    class=""      data-image-key="Attackspeed.png"   data-image-name="Attackspeed.png"       width="40"     height="20"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Дальність атаки <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;path-prefix=ru&amp;format=webp" alt="Дальность" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Range.png" data-image-name="Range.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;path-prefix=ru" width="30" height="14" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;amp;path-prefix=ru"    alt="Дальність"    class=""      data-image-key="Range.png"   data-image-name="Range.png"       width="30"     height="14"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Радіус реагування
+                </th></tr>
+                <tr>
+                <td> Будь-яка
+                </td><td> Наземні
+                </td><td> 16
+                </td><td> 1.2с
+                </td><td> 1 клітинка
+                </td><td> 13 клітинок
+                </td></tr></tbody></table>
+                <hr>
+                <div class="table-wrapper table-is-wide" style="margin-top: 20px;"><div class="table-scrollable"><table class="wikitable" border="0" cellpadding="1" cellspacing="1" style="width: 100%; text-align: center;">
+                <tbody><tr>
+                <th scope="col" style="text-align: center;"> Рівень <img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;path-prefix=ru&amp;format=webp" alt="Уровень" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Level.png" data-image-name="Level.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;path-prefix=ru" width="17" height="18" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;amp;path-prefix=ru"    alt="Рівень"    class=""      data-image-key="Level.png"   data-image-name="Level.png"       width="17"     height="18"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Рівень в секунду <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;path-prefix=ru&amp;format=webp" alt="Весь урон" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Totaldamage.png" data-image-name="Totaldamage.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;path-prefix=ru" width="33" height="21" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;amp;path-prefix=ru"    alt="Весь урон"    class=""      data-image-key="Totaldamage.png"   data-image-name="Totaldamage.png"       width="33"     height="21"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Урон за удар <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;path-prefix=ru&amp;format=webp" alt="Урон" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Damage.png" data-image-name="Damage.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;path-prefix=ru" width="28" height="26" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;amp;path-prefix=ru"    alt="Урон"    class=""      data-image-key="Damage.png"   data-image-name="Damage.png"       width="28"     height="26"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Урон в секунду ("Залізний кулак")<img src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;path-prefix=ru&amp;format=webp" alt="Весь урон" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Totaldamage.png" data-image-name="Totaldamage.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;path-prefix=ru" width="33" height="21" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/9/97/Totaldamage.png/revision/latest/scale-to-width-down/33?cb=20140115013631&amp;amp;path-prefix=ru"    alt="Весь урон"    class=""      data-image-key="Totaldamage.png"   data-image-name="Totaldamage.png"       width="33"     height="21"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Здоров'я <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;path-prefix=ru&amp;format=webp" alt="Прочность" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Hitpoint.png" data-image-name="Hitpoint.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;path-prefix=ru" width="20" height="19" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;amp;path-prefix=ru"    alt="Прочность"    class=""      data-image-key="Hitpoint.png"   data-image-name="Hitpoint.png"       width="20"     height="19"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Регенерація <img src="http://vignette2.wikia.nocookie.net/clashofclans/images/f/f3/Totalhealing.png/revision/latest/scale-to-width-down/35?cb=20140115013644&amp;path-prefix=ru&amp;format=webp" alt="Лечение" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Totalhealing.png" data-image-name="Totalhealing.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/f/f3/Totalhealing.png/revision/latest/scale-to-width-down/35?cb=20140115013644&amp;path-prefix=ru" width="35" height="22" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/f/f3/Totalhealing.png/revision/latest/scale-to-width-down/35?cb=20140115013644&amp;amp;path-prefix=ru"    alt="Лікування"    class=""      data-image-key="Totalhealing.png"   data-image-name="Totalhealing.png"       width="35"     height="22"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Рівень вміння
+                </th><th scope="col" style="text-align: center;"> Ціна покращення <a  class="image image-thumbnail" title="Тёмный эликсир"><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3b/Dark_elixir.png/revision/latest/scale-to-width-down/18?cb=20140115013237&amp;path-prefix=ru&amp;format=webp" alt="Тёмный эликсир" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Dark_elixir.png" data-image-name="Dark elixir.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3b/Dark_elixir.png/revision/latest/scale-to-width-down/18?cb=20140115013237&amp;path-prefix=ru" width="18" height="20" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3b/Dark_elixir.png/revision/latest/scale-to-width-down/18?cb=20140115013237&amp;amp;path-prefix=ru"    alt="Чорний еліксир"    class=""      data-image-key="Dark_elixir.png"   data-image-name="Dark elixir.png"       width="18"     height="20"             &gt;</noscript></a>
+                </th><th scope="col" style="text-align: center;"> Час покращення <img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;path-prefix=ru&amp;format=webp" alt="Время" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Stopwatch.png" data-image-name="Stopwatch.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;path-prefix=ru" width="18" height="21" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;amp;path-prefix=ru"    alt="Время"    class=""      data-image-key="Stopwatch.png"   data-image-name="Stopwatch.png"       width="18"     height="21"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Потрібний рівень ратуші
+                </th></tr>
+                <tr>
+                <td> 1
+                </td><td> 120
+                </td><td> 144
+                </td><td> N/A
+                </td><td> 1,700
+                </td><td> 30м
+                </td><td> N/A.
+                </td><td> 10,000
+                </td><td> Нет
+                </td><td> 7
+                </td></tr>
+                <tr>
+                <td> 2
+                </td><td> 122
+                </td><td> 146.4
+                </td><td> N/A
+                </td><td> 1,742
+                </td><td> 32м
+                </td><td> N/A
+                </td><td> 12,500
+                </td><td> 12ч
+                </td><td> 7
+                </td></tr>
+                <tr>
+                <td> 3
+                </td><td> 124
+                </td><td> 148.8
+                </td><td> N/A
+                </td><td> 1,786
+                </td><td> 34м
+                </td><td> N/A
+                </td><td> 15,000
+                </td><td> 1д
+                </td><td> 7
+                </td></tr>
+                <tr>
+                <td> 4
+                </td><td> 127
+                </td><td> 152.4
+                </td><td> N/A
+                </td><td> 1,830
+                </td><td> 36м
+                </td><td> N/A
+                </td><td> 17,500
+                </td><td> 1д 12ч
+                </td><td> 7
+                </td></tr>
+                <tr>
+                <td> 5
+                </td><td> 129
+                </td><td> 154.8
+                </td><td> 185
+                </td><td> 1,876
+                </td><td> 38м
+                </td><td> 1
+                </td><td> 20,000
+                </td><td> 2д
+                </td><td> 7
+                </td></tr>
+                <tr>
+                <td> 6
+                </td><td> 132
+                </td><td> 158.4
+                </td><td> 188
+                </td><td> 1,923
+                </td><td> 40м
+                </td><td> 1
+                </td><td> 22,500
+                </td><td> 2д 12ч
+                </td><td> 8
+                </td></tr>
+                <tr>
+                <td> 7
+                </td><td> 135
+                </td><td> 162
+                </td><td> 191
+                </td><td> 1,971
+                </td><td> 42м
+                </td><td> 1
+                </td><td> 25,000
+                </td><td> 3д
+                </td><td> 8
+                </td></tr>
+                <tr>
+                <td> 8
+                </td><td> 137
+                </td><td> 164.4
+                </td><td> 193
+                </td><td> 2,020
+                </td><td> 44м
+                </td><td> 1
+                </td><td> 30,000
+                </td><td> 3д 12ч
+                </td><td> 8
+                </td></tr>
+                <tr>
+                <td> 9
+                </td><td> 140
+                </td><td> 168
+                </td><td> 196
+                </td><td> 2,071
+                </td><td> 46м
+                </td><td> 1
+                </td><td> 35,000
+                </td><td> 4д
+                </td><td> 8
+                </td></tr>
+                <tr>
+                <td> 10
+                </td><td> 143
+                </td><td> 171.6
+                </td><td> 244
+                </td><td> 2,123
+                </td><td> 48м
+                </td><td> 2
+                </td><td> 40,000
+                </td><td> 4д 12ч
+                </td><td> 8
+                </td></tr>
+                <tr>
+                <td> 11
+                </td><td> 146
+                </td><td> 175.2
+                </td><td> 247
+                </td><td> 2,176
+                </td><td> 50м
+                </td><td> 2
+                </td><td> 45,000
+                </td><td> 5д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 12
+                </td><td> 149
+                </td><td> 178.8
+                </td><td> 250
+                </td><td> 2,230
+                </td><td> 52м
+                </td><td> 2
+                </td><td> 50,000
+                </td><td> 5д 12ч
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 13
+                </td><td> 152
+                </td><td> 182.4
+                </td><td> 253
+                </td><td> 2,286
+                </td><td> 54м
+                </td><td> 2
+                </td><td> 55,000
+                </td><td> 6д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 14
+                </td><td> 155
+                </td><td> 186
+                </td><td> 256
+                </td><td> 2,343
+                </td><td> 56м
+                </td><td> 2
+                </td><td> 60,000
+                </td><td> 6д 12ч
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 15
+                </td><td> 158
+                </td><td> 189.6
+                </td><td> 305
+                </td><td> 2,402
+                </td><td> 58м
+                </td><td> 3
+                </td><td> 65,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 16
+                </td><td> 161
+                </td><td> 193.2
+                </td><td> 308
+                </td><td> 2,462
+                </td><td> 1ч
+                </td><td> 3
+                </td><td> 70,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 17
+                </td><td> 164
+                </td><td> 196.8
+                </td><td> 311
+                </td><td> 2,523
+                </td><td> 1ч 2м
+                </td><td> 3
+                </td><td> 75,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 18
+                </td><td> 168
+                </td><td> 201.6
+                </td><td> 315
+                </td><td> 2,586
+                </td><td> 1ч 4м
+                </td><td> 3
+                </td><td> 80,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 19
+                </td><td> 171
+                </td><td> 205.2
+                </td><td> 318
+                </td><td> 2,651
+                </td><td> 1ч 6м
+                </td><td> 3
+                </td><td> 85,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 20
+                </td><td> 174
+                </td><td> 208.8
+                </td><td> 369
+                </td><td> 2,717
+                </td><td> 1ч 8м
+                </td><td> 4
+                </td><td> 90,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 21
+                </td><td> 178
+                </td><td> 213.6
+                </td><td> 373
+                </td><td> 2,785
+                </td><td> 1ч 10м
+                </td><td> 4
+                </td><td> 95,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 22
+                </td><td> 181
+                </td><td> 217.2
+                </td><td> 376
+                </td><td> 2,855
+                </td><td> 1ч 12м
+                </td><td> 4
+                </td><td> 100,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 23
+                </td><td> 185
+                </td><td> 222
+                </td><td> 380
+                </td><td> 2,926
+                </td><td> 1ч 14м
+                </td><td> 4
+                </td><td> 105,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 24
+                </td><td> 189
+                </td><td> 226.8
+                </td><td> 384
+                </td><td> 2,999
+                </td><td> 1ч 16м
+                </td><td> 4
+                </td><td> 110,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 25
+                </td><td> 193
+                </td><td> 231.6
+                </td><td> 438
+                </td><td> 3,074
+                </td><td> 1ч 18м
+                </td><td> 5
+                </td><td> 115,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 26
+                </td><td> 196
+                </td><td> 235.2
+                </td><td> 441
+                </td><td> 3,151
+                </td><td> 1ч 20м
+                </td><td> 5
+                </td><td> 120,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 27
+                </td><td> 200
+                </td><td> 240
+                </td><td> 445
+                </td><td> 3,230
+                </td><td> 1ч 22м
+                </td><td> 5
+                </td><td> 125,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 28
+                </td><td> 204
+                </td><td> 244.8
+                </td><td> 449
+                </td><td> 3,311
+                </td><td> 1ч 24м
+                </td><td> 5
+                </td><td> 130,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 29
+                </td><td> 208
+                </td><td> 249.6
+                </td><td> 453
+                </td><td> 3,394
+                </td><td> 1ч 26м
+                </td><td> 5
+                </td><td> 135,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 30
+                </td><td> 213
+                </td><td> 255.6
+                </td><td> 511
+                </td><td> 3,478
+                </td><td> 1ч 28м
+                </td><td> 6
+                </td><td> 140,000
+                </td><td> 7д
+                </td><td> 9
+                </td></tr>
+                <tr>
+                <td> 31
+                </td><td> 217
+                </td><td> 260.4
+                </td><td> 515
+                </td><td> 3,565
+                </td><td> 1ч 30м
+                </td><td> 6
+                </td><td> 145,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 32
+                </td><td> 221
+                </td><td> 265.2
+                </td><td> 519
+                </td><td> 3,655
+                </td><td> 1ч 32м
+                </td><td> 6
+                </td><td> 150,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 33
+                </td><td> 226
+                </td><td> 271.2
+                </td><td> 524
+                </td><td> 3,746
+                </td><td> 1ч 34м
+                </td><td> 6
+                </td><td> 155,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 34
+                </td><td> 230
+                </td><td> 276
+                </td><td> 528
+                </td><td> 3,840
+                </td><td> 1ч 36м
+                </td><td> 6
+                </td><td> 160,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 35
+                </td><td> 235
+                </td><td> 282
+                </td><td> 589
+                </td><td> 3,936
+                </td><td> 1ч 38м
+                </td><td> 7
+                </td><td> 165,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 36
+                </td><td> 239
+                </td><td> 286.8
+                </td><td> 593
+                </td><td> 4,034
+                </td><td> 1ч 40м
+                </td><td> 7
+                </td><td> 170,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 37
+                </td><td> 244
+                </td><td> 292.8
+                </td><td> 598
+                </td><td> 4,135
+                </td><td> 1ч 42м
+                </td><td> 7
+                </td><td> 175,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 38
+                </td><td> 249
+                </td><td> 298.8
+                </td><td> 603
+                </td><td> 4,238
+                </td><td> 1ч 44м
+                </td><td> 7
+                </td><td> 180,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 39
+                </td><td> 254
+                </td><td> 304.8
+                </td><td> 608
+                </td><td> 4,344
+                </td><td> 1ч 46м
+                </td><td> 7
+                </td><td> 185,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr>
+                <tr>
+                <td> 40
+                </td><td> 259
+                </td><td> 310.8
+                </td><td> 673
+                </td><td> 4,453
+                </td><td> 1ч 48м
+                </td><td> 8
+                </td><td> 190,000
+                </td><td> 7д
+                </td><td> 10
+                </td></tr></tbody></table></div><div id="floating-scrollbar" style="position: fixed; bottom: 0px; height: 30px; overflow-x: auto; overflow-y: hidden; display: block; left: 129.5px; width: 684px;"><div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 766px;"></div></div></div>
+                <hr>
+                <p><b>Уміння «Залізний Кулак»</b>
+                </p>
+                <table class="wikitable" border="0" cellpadding="1" cellspacing="1" style="width: 100%; text-align: center;">
+
+                <tbody><tr>
+                <th scope="col" style="text-align: center;">Рівень уміння
+                </th><th scope="col" style="text-align: center;">Збільшення урону
+                </th><th scope="col" style="text-align: center;">Збільшення здоров'я
+                </th><th scope="col" style="text-align: center;">Збільшення швидкості
+                </th><th scope="col" style="text-align: center;">Призвані війська
+                </th><th scope="col" style="text-align: center;">Час дії уміння
+                </th></tr>
+                <tr>
+                <td> 1
+                </td><td> 56
+                </td><td> 500
+                </td><td> 18
+                </td><td> 6
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 2
+                </td><td> 101
+                </td><td> 620
+                </td><td> 19
+                </td><td> 8
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 3
+                </td><td> 147
+                </td><td> 752
+                </td><td> 20
+                </td><td> 10
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 4
+                </td><td> 195
+                </td><td> 899
+                </td><td> 21
+                </td><td> 12
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 5
+                </td><td> 245
+                </td><td> 1,063
+                </td><td> 22
+                </td><td> 14
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 6
+                </td><td> 298
+                </td><td> 1,247
+                </td><td> 23
+                </td><td> 16
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 7
+                </td><td> 354
+                </td><td> 1,455
+                </td><td> 24
+                </td><td> 18
+                </td><td> 10с
+                </td></tr>
+                <tr>
+                <td> 8
+                </td><td> 414
+                </td><td> 1,692
+                </td><td> 25
+                </td><td> 20
+                </td><td> 10с
+                </td></tr></tbody></table>
+                </div>
+              </div>
+              <div class="tab-pane" id="цікавіфакти" style="text-align: justify;">
+                    <p>
+                    <b>Цікаві факти про Короля Варварів</b><br>
+                    <ul>
+                    <li>Часом, коли Король Варваров повертається, його наплічник і меч опиняються в іншій руці.</li>
+
+                    <li>При переміщенні Вівтаря Короля, у той час як він спить на ньому, він встає і йде до Вівтаря, потім знову засинає.</li>
+
+                    <li>Короля можуть зцілити Зцілююче Заклинання або Цілителька безпосередньо під час битви, однак швидкість зцілення на 50% менше аналогічного показника інших військ.</li>
+                    <img src="/im/barbarian_king/Barbarian_king_lvl5.png" vspace="5" hspace="5" style="float:right"                           alt="Barbarian King Lvl5" width="350px"/>
+
+                    <li>Кожен удар, що наноситься Королем Варваров, викликає міні-вибух.</li>
+
+                    <li>При натисканні на Короля він починає кричати і завмирає на мить.</li>
+
+                    <li>Натискання на Короля Варваров або його Вівтар (не в бою) розкриє область, яку він буде захищати.</li>
+
+                    <li>Коли Король Варваров «падає» в бою, відбувається вибух, і в небо спрямовується яскравий промінь світла. Король варто приголомшеним протягом решти бою.</li>
+
+                    <li>Кожен наступний апгрейд Короля Варваров додає йому приблизно 2,5% здоров'я і 2% утрати, але при цьому зайві дві хвилини додаються і до повного часу його регенерації. Як наслідок, швидкість регенерації Короля змінюється разом з підвищенням його рівня. Спочатку швидкість відновлення Короля сповільнюється з кожним рівнем, переходячи від 1700 хитпоинтов на годину на 1 рівні до 1181 хитпоинтов на годину на 26 рівні. Після 26 рівня швидкість починає повільно підніматися знову, в кінцевому рахунку досягаючи тисяча сто вісімдесят шість хитпоинтов на годину на 40 рівні.</li>
+
+                    <li>Король Варваров блукає по колу навколо свого Вівтаря, іноді перестрибуючи через стіни.</li>
+
+                    <li>Король Варваров в основному аналог Королеви лучниці, хоча на відміну від нього вона є фахівцем ушкодження.</li>
+
+                    <li>На король не діє Пружинна Пастка.</li>
+
+                    <li>Починаючи з 5-го рівня, Король Варваров отримує здатність під назвою «Залізний Кулак», яку можна використовувати на полі бою. Ця здатність в деякій мірі надає лікувальну дію на нього, викликає до 20 додаткових Варваров і збільшує шкоди, що завдається Королем і будь-якими навколишніми його Варварами, і їх швидкість. Здатність не поєднується з заклинаннями Люті і не впливає на будь-які інші війська, крім Короля та прилеглих (дружніх) Варваров.</li>
+
+                    <li>Після розгортання Короля його значок у вікні розгортання військ набуває вигляду способу активації Залізного Кулака. Щоб активувати цю здатність, досить просто знову натиснути на цей значок.</li>
+
+                    <li>При активації Залізного Кулака Король отримує тимчасовий ефект, подібний на Заклинання Люті, але менш сильний і впливає тільки на Варваров.</li>
+
+                    <li>Король викликає тільки Варваров, чий рівень дорівнює рівню ваших Варваров, досліджуваних в лабораторії (наприклад, якщо ви можете тренувати Варваров 5 рівня, то Король викличе Варваров якраз цього рівня).</li>
+
+                    <li>В рамках оновлення від 3 липня 2014 був знижений ефект Заклинання Люті на Короля на 20%.</li>
+
+                    <li>Оновлено 16 вересня 2014 вдвічі скоротило час регенерації Короля Варваров щодо того, щоб було до цього поновлення (до рівня 30).</li>
+                    </ul>
+                    </p>
+                    
+              </div>
+              <div class="tab-pane" id="фотовідео">
+            <div class="swell">
+            <h4>Король Варварів Clash of Clans | Фото та Відео</h4>
+                Фото та відео за участю могутнього Короля Варварів, переглядайте фото та відео, залишайте коментарі ми                     завжди раді їм.
+                Колекція цих фото та відео буде постійно наповнюватись, слідкуйте за оновленням сайту та наших груп.<br>
+                Дякуємо за те що ви з нами!:)
+            </div>            
+        <div id="gallerybarbarianking" style="display:none;margin-top:10px">
+            
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0001.jpg"
+                 data-image="/im/mems/0001.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0002.jpg"
+                 data-image="/im/mems/0002.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0003.jpg"
+                 data-image="/im/mems/0003.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0004.jpg"
+                 data-image="/im/mems/0004.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0005.jpg"
+                 data-image="/im/mems/0005.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0006.jpg"
+                 data-image="/im/mems/0006.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0007.jpg"
+                 data-image="/im/mems/0007.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+ 
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0008.jpg"
+                 data-image="/im/mems/0008.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0009.jpg"
+                 data-image="/im/mems/0009.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">              
+        </div>
+              </div>
+        </div>
+    </div>
+    <!-- Карта Персонажів -->
+    <hr>
+    <div class="row" style="margin-top:20px;">
+        <div class="col-md-8">
+            <div class="mapperson">
+              <div class="panel panel-default">
+               <!-- Default panel contents -->
+                  <div class="panel-heading" style="text-align:center"><b>Карта персонажів</b></div>
+               <!-- Table -->
+                  <table class="table" style="size:2;" summary="карта персонажів в Clash of Clans">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Категорія</th>
+                        <th></th>
+                        <th></th>
+                        <th>Назви персонажі</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody style="font:small-caption;text-align: center;">
+                      <tr>
+                        <td><b>Герої:</b></td>
+                        <td>
+                            <a href="barbarian-king.html" title="Перейти до опису Короля Варварів">
+                                <img alt="Король Варварів" src="im/icon/barbarian king.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="archer-queen.html" title="Перейти до опису Королеви Лучниць">
+                                <img alt="Королева Лучниць" src="im/icon/archer queen.png" style="height: 50px;">
+                            </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Казарма:</b></td>
+                        <td>
+                            <a href="barbarian.html" title="Перейти до опису варвара">
+                                <img alt="Варвар" src="im/icon/barbarian.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                            <a href="archer.html" title="Перейти до опису Лучниць">
+                                <img alt="Лучниці" src="im/icon/archer.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="goblin.html" title="Перейти до опису гоблінів">
+                                <img alt="Гоблін" src="im/icon/goblin.png" style="height: 50px;">
+                            </a>  
+                        </td>
+                        <td>
+                            <a href="giant.html" title="Перейти до опису ггігантів">
+                                <img alt="Гігант" src="im/icon/giant.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                            <a href="wall breaker.html" title="Перейти до опису стінобоя">
+                                <img alt="Стінобій" src="im/icon/wall breaker.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                           <a href="balloon.html" title="Перейти до опису повітряної кулі">
+                                <img alt="Повітряна куля" src="im/icon/Balloon.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>   
+                        <td>
+                            <a href="wizard.html" title="Перейти до опису Мага">
+                                <img alt="Маг" src="im/icon/wizard.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>Цілителька</td>
+                        <td>Дракон</td>
+                        <td>
+                            <a href="pekka.html" title="Перейти до опису ПЕККИ">
+                                <img alt="ПЕККА" src="im/icon/pekka.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td></td> 
+                      </tr>
+                      <tr>
+                        <td><b>Темна казарма:</b></td>
+                        <td>
+                          <a href="minion.html" title="Перейти до опису Мінйона">
+                                <img alt="Мінйон" src="im/icon/minion.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="hog rider.html" title="Перейти до опису Вершника на кабані">
+                                <img alt="Вершника на кабані" src="im/icon/hog rider.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>Валькірія</td>
+                        <td>Голем</td>
+                        <td>Пекельна гонча</td>
+                        <td>
+                            <a href="witch.html" title="Перейти до опису відьми">
+                                <img alt="Відьма" src="im/icon/witch.png" style="height: 50px;">
+                            </a>
+                        </td> 
+                      </tr>
+                      <tr>
+                        <td><b>Персонажі:</b></td>
+                        <td>Будівельник</td>
+                        <td>Житель</td>
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                      </tr>
+                      <tr>
+                        <td><b>Заклинання:</b></td>
+                        <td>
+                            <a href="Lightning_Spell.html" title="Перейти до опису заклинання блискавки">
+                                <img alt="Заклинання блискавки" src="im/icon/Lightning_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Healing_Spell.html" title="Перейти до опису заклинання зцілення">
+                                <img alt="Заклинання зцілення" src="im/icon/Healing_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Rage_Spell.html" title="Перейти до опису заклинання ярості">
+                                <img alt="Заклинання ярості" src="im/icon/Rage_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Jump_Spell.html" title="Перейти до опису заклинання стрибка">
+                                <img alt="Заклинання стрибка" src="im/icon/Jump_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Freeze_Spell.html" title="Перейти до опису заклинання заморозки">
+                                <img alt="Заклинання заморозки" src="im/icon/Freeze_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Santassurprise.html" title="Перейти до опису сюрпризу Санти">
+                                <img alt="Сюрприз від Санти" src="im/icon/Santassurprise.png" style="height: 45px;">
+                            </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>   
+            </div>  
+        </div>
+        <div class="col-md-4">
+        Банер
+        </div>
+    </div>
+    
+    
+    
+    <!-- Низ сайту -->
+
+ 
+    <footer class="footer" id="footer">
+        <div class="row" >
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm"> 
+                <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Розділи сайту:</font></b>
+                        <li>
+                        <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3">
+                   <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Цікаві розділи сайту:</font></b>
+                        <li>
+                        <a href="#">Написати нам</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b><font color="white">Завантажити Clash of Clans</font></b>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                        </li>
+                        <li>
+                            <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                        </li>
+                        <li>
+                        <i>
+                            <font color="white">  Поточна версія: 7.156.4 </i>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="col-xs-6 col-md-3">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                        <li>
+                            <font size="2" color="white"></font>
+                        </li>
+                        <li>
+                            <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </footer>
+       <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+    
+
+    <div class="row" >
+        <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+     </div>
+
+    </div> 
+    </div><!-- /container -->
+
+    <!-- JavaScript-ядро Bootstrap
+    ================================================== -->
+    <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+    <script src="/dist/js/bootstrap.js"></script>
+    <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+    <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+                      
+<script type="text/javascript">
+                jQuery(document).ready(function(){
+                jQuery("#gallerybarbarianking").unitegallery({
+                    tiles_type:"justified",
+                    tile_enable_outline: true,      //enable outline of the tile (works only together with the border)
+          tile_outline_color: "#8B8B8B",    //tile outline color
+          
+          tile_enable_shadow:true,      //enable shadow of the tile
+          tile_shadow_h:1,          //position of horizontal shadow
+          tile_shadow_v:1,          //position of vertical shadow
+          tile_shadow_blur:3,          //shadow blur
+          tile_shadow_spread:2,        //shadow spread
+          tile_shadow_color:"#8B8B8B",    //shadow color
+          
+          tile_enable_action:  true,      //enable tile action on click like lightbox
+          tile_link_newpage: true,      //open the tile link in new page
+    
+          tile_enable_overlay: true,      //enable tile color overlay (on mouseover)
+          tile_overlay_opacity: 0.45,      //tile overlay opacity
+          tile_overlay_color: "#000000",    //tile overlay color
+          
+          tile_enable_icons: true,      //enable icons in mouseover mode
+          tile_show_link_icon: true,      //show link icon (if the tile has a link). In case of tile_as_link this option not enabled
+          tile_space_between_icons: 25,    //initial space between icons, (on small tiles it may change)
+          
+          //tile text panel options:
+          
+          tile_enable_textpanel: true,       //enable textpanel
+          tile_textpanel_source: "desc_title",  //title,desc,desc_title. source of the textpanel. desc_title - if description empty, put title
+          
+          tile_textpanel_padding_top:8,       //textpanel padding top 
+          tile_textpanel_padding_bottom:8,     //textpanel padding bottom
+          tile_textpanel_padding_right: 11,     //cut some space for text from right
+          tile_textpanel_padding_left: 11,     //cut some space for text from left
+          tile_textpanel_bg_opacity: 0.5,       //textpanel background opacity
+          tile_textpanel_bg_color:"#000000",     //textpanel background color
+          
+           //lightbox options:    
+          lightbox_hide_arrows_onvideoplay: true,      //hide the arrows when video start playing and show when stop
+          lightbox_arrows_position: "inside",        //sides, inside: position of the arrows, used on compact type      
+          lightbox_arrows_offset: 10,            //The horizontal offset of the arrows
+          lightbox_arrows_inside_offset: 10,        //The offset from the image border if the arrows placed inside
+          lightbox_arrows_inside_alwayson: false,      //Show the arrows on mouseover, or always on.
+          
+          lightbox_overlay_color:null,          //the color of the overlay. if null - will take from css
+          lightbox_overlay_opacity:0.6,            //the opacity of the overlay. for compact type - 0.6    
+            lightbox_slider_image_border: true,        //enable border around the image (for compact type only)
+            lightbox_slider_image_border_width: 2,      //image border width
+            lightbox_slider_image_border_color: "#ffffff",  //image border color
+            lightbox_slider_image_border_radius: 2,      //image border radius
+      });
+    });
+  </script>
+
+  </body>
+</html>

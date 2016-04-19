@@ -1,0 +1,563 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Короткий опис сторінки">
+        <meta name="keywords" content="Ключові слова до сторінки">
+        <meta name="author" content="Автор Небасуй В.В. - (Autor - Nebasuy Vadym V.)">
+        <link rel="icon" href="favicon.ico">
+        <title>Clash of Clans</title>
+
+        <!-- CSS-ядро Bootstrap -->
+        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <!-- Теми Bootstrap -->
+        <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+        <!-- Підібрані стилі саме для цього шаблона -->
+        <link href="dist/css/theme.css" rel="stylesheet">
+        <!-- Це чисто для цілей налагодження. Вам не потрібно копіювати цих два рядки! -->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- Лічильники Яндекс та Гугл -->
+        <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    </head>
+
+    <body role="document">
+        <!-- Фіксована навігаційна панель -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Відкрити меню</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Герої</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Король Варварів </a></li>
+                                        <li> <a tabindex="-1" href="#">Королева Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Варвар</a></li>
+                                        <li> <a tabindex="-1" href="#">Лучниця</a></li>
+                                        <li> <a tabindex="-1" href="#">Гоблін</a></li>
+                                        <li> <a tabindex="-1" href="#">Гігант</a></li>
+                                        <li> <a tabindex="-1" href="#">Стінобій</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна куля</a></li>
+                                        <li> <a tabindex="-1" href="#">Маг</a></li>
+                                        <li> <a tabindex="-1" href="#">Цілителька</a></li>
+                                        <li> <a tabindex="-1" href="#">Дракон</a></li>
+                                        <li> <a tabindex="-1" href="#">П.Е.К.К.А</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Темна казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Міньйон</a></li>
+                                        <li> <a tabindex="-1" href="#">Вершник на кабані</a></li>
+                                        <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                        <li> <a tabindex="-1" href="#">Голем</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                        <li> <a tabindex="-1" href="#">Відьма</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> Будівельник</a></li>
+                                <li><a href="#"> Житель</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Захисні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                        <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                        <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                        <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                        <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                        <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                        <li> <a tabindex="-1" href="#">Пастки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Військові</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                        <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                        <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Ресурсні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                        <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Інші</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                        <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                        <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                        <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ратуша (Town Hall)</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-sm hidden-md"><a href="schems.html">Розстановки</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Цікаві бази</a></li>
+                                <li><a href="#">Фан-арт</a></li>
+                                <li><a href="#">Меми</a></li>
+                                <li><a href="#">Інше</a></li>
+                            </ul>
+                        </li>
+                        <li class="active hidden-sm hidden-md"><a href="help.html">Допомога</a></li>
+                        <li class="hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+                        <li>
+                             <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                             <!-- Блок переключення мов
+                               <div class="flag" style="vertical-align:middle">
+                                <a href="">
+                                <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                                <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                                <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                                </a>
+                                <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                                <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                                </a>
+                            </div>
+                            -->
+                        </li>
+                    </ul>
+                    <!--   <form class="navbar-form navbar-left" role="search">
+<div class="form-group" style="vertical-align:middle;">
+<input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+</div>
+<button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button>
+</form> -->
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!-- Кінець верхньої навігаційної панелі -->
+        <div class="container">
+            <!-- Початок блоку із слайдером -->
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-4" style="text-align: center;">
+                      <div class="row">                       
+                         <div class="col-md-6" style="text-align: left;">
+                              <h2><b> Допомога </b></h2>                        
+                         </div>
+                         <div class="col-md-6" style="text-align: right"> 
+                              <img alt="COC" src="im/icon/FAQCOC.png" />                          
+                         </div>
+                      </div>
+                    <hr>
+                    <div class="btn-group-vertical" role="group" aria-label="true">
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-faq.html'" >Найчастіші запитання</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-clanswar.html'" >Війни кланів</button>
+                        <button type="button" class="btn btn-success active" aria-pressed="true"  onclick="window.location.href='help-atak.html'" >Атака і оборона</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-first.html'" >Самий початок</button>
+                        <button type="button" class="btn btn-success" aria-pressed="true" onclick="window.location.href='help-res.html'" >Ресурси, кристали та опалата</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-bilding.html'" >Будівлі та споруди</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-clansunit.html'" >Кланові війська</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-helps.html'" >Підключення, та зміна поселень</button>
+                    </div>
+                    <div class="row"  style="text-align: center;">
+                         <img alt="barbarian_help" src="im/helps/barbarian_help.png" style="margin-top:5px;text-align:center;margin-top: 15px; height: 350px;"/> 
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+                    
+<!------- Блок атака і оборона ------->
+            <!--      <div id="faq" class="collapse"> -->
+                   <div id="accordinOne" class="collapsed">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       На мене напав гравець із занадто великим військом. Він читер?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Плутанина через кількість воїнів часто відбувається через використання загонів з Фортеці клану.
+
+                                    Значок клану, що з'являється в журналі битви на іконках воїнів, означає, що гравець відправив у бій солдатів з Фортеці. Пам'ятайте, що всі війська, використані в битві, включаючи тих, що прибули з Фортеці, будуть показані в списку «Хід оборони». Це означає, що гравець може напасти на вас, використовуючи максимум 240 солдатів плюс солдати з Фортеці (не більше 30).
+                                    Воїни з Фортеці не відображатися окремо, а будуть додані до всіх інших.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Як я можу керувати солдатами після того, як розверну їх для бою? 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Проводячи атаку в Clash, ви повинні правильно розмістити війська на полі бою. Варто їм увійти в бій, вони почнуть нападати самі, і гравець вже не зможе ними управляти.
+
+Солдати будуть нападати залежно від здібностей і бажаних цілей: почитайте інформацію про кожному роді військ, що вони вміють і для чого потрібні.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Що таке здібності героїв і як вони працюють?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+І королева лучників, і король варварів починаючи з 5 рівня отримують особливі здібності, які ви можете активувати під час атаки.
+
+Залізний кулак короля варварів
+Залізний кулак закликає десятьох варварів (на найвищому рівні) і збільшує швидкість і силу короля. Також збільшується його здоров'я, якщо він встиг постраждати.
+
+Для активації залізного кулака в бою, по-перше, потрібно випустити короля на полі брані. Потім знову торкніться його іконки, і здатність включиться.
+                                    Королівська мантія королеви лучників
+При використанні королівської мантії королева лучниць на час стає невидимою, і в неї стає не можна цілитися. Будь захисні споруди, нападники на неї, будуть шукати нову мішень. До того ж королева закликає групу лютих лучниць, які приходять їй на допомогу. Як і король варварів, королева отримує здоров'я, якщо її встигли ранити.
+
+Для активації королівської мантії ще раз торкніться іконки королеви лучниць після того, як вона опинилася на полі бою.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingfour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Чому мені дають супротивників тільки з меншим числом трофеїв, ніж у мене?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                <div class="panel-body">
+                                    Після того, як ви наберете певну кількість трофеїв, системі буде складно знайти вам супротивника того ж рівня. Це тому, що більшість противників вашого рангу або в мережі, або під щитом.
+
+З часом, коли більше гравців дійдуть до вашого рівня трофеїв, вам буде простіше знаходити супротивників.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Деякі мої воїни пережили битву. Куди вони зникли?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                      Після того, як ви розгорнули війська, вони вже не повернуться. Так було влаштовано для того, щоб ви обмірковували і тактичний бік гри: скільки мінімум солдатів я можу використовувати, щоб перемогти цього противника? Якщо ви не будете розгортати війська, вони спокійнісінько повернуться в табори після бою.
+
+Спробуйте відточити свою стратегію в одиночній кампанії. Завдяки цьому ви побачите, як працюють різні групи військ, і не втратите їх даремно! Експериментуйте з різними тактиками і комбінаціями військ. Кожен солдат має свої унікальні сили і слабкості.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Як хтось зміг розгорнути війська у мене за стінами?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+Коли ви будуєте в своєму селі стіну або будівля, навколо з'являється безпечна зона, показана білим. Коли ви нападаєте, вона стає червоною. У цій зоні не можна розгортати війська, але якщо ви поставите стіни занадто далеко від будівель, війська зможуть напасти зсередини, з'явившись у дірах між стінами і будівлями (як на картинці).
+Пам'ятайте, що у пасток, бомб і потаємних Тесла немає безпечної зони: якщо ви помістіть їх занадто далеко від будівель або стін, то утворюються порожні місця в селі, які дозволять противникам розгорнути там війська.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Як змусити війська захищати село?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                        Для того, щоб солдати захистили вашу дорогоцінну село, для початку вам доведеться вступити в клан або створити свій, а потім попросити війська: попросити учасників пожертвувати вам воїнів, які житимуть в Фортеці клану. Після цього ви можете використовувати їх у своїх нападах, або вони автоматично будуть захищати село при облозі, як тільки ворожі солдати увійдуть до «зону ураження» Фортеці.
+
+Ви не зможете використовувати для захисту свої власні війська з Військових таборів. Ці солдати цілком зосереджені на нападі.
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading8">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Військовий табір ще не заповнений, але війська в нього не йдуть
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                <div class="panel-body">
+                                      Різні війська займають різну кількість місця у військових таборах. Тому він може вважатися заповненим, навіть якщо не все місце в ньому зайнято.
+Наприклад, варвар, гоблін і лучниці займають тільки 1 місце, а гігант - цілих 5. У таборі з 35 місцями у вас може бути, наприклад, 35 варварів або 7 гігантів. В обох випадках табір буде заповнений. У той же час, якщо у вас вже є 31 варвар і навчається гігант, то приготуйтеся до того, що він не зможе потрапити в табір, тому що в ньому немає 36 місць.
+Щоб ваша армія стала сильнішою, поліпшите воїнів в лабораторії (потрібне їм місце залишиться колишнім). Також рекомендуємо покращувати табору, щоб мати більше місця, або навчати рівно стільки солдатів, скільки влізе в табір.
+                                </div>
+                            </div>
+                        </div>                                                
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading9">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        Чому мої трофеї не додавати в досягнення «Смак перемоги»?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                <div class="panel-body">
+                                       Досягнення «Смак перемоги» відображає найбільшу кількість трофеїв, що було у вас з початку гри. Воно не буде враховувати суму трофеїв, які ви отримуєте, тільки саме велика їх кількість.
+
+Наприклад:
+Найбільша кількість трофеїв, що у вас було - 1000, значить «Смак перемоги» покаже 1000
+А потім ви втратили 20 трофеїв в битві, і тепер у вас їх 980, але «Смак перемоги» все одно буде відображати 1000
+Потім ви виграли ще 15 і тепер маєте 995 трофеїв, але «Смак перемоги» все одно показує 1000 як найбільше число трофеїв
+Потім ви виграли ще 25 і тепер маєте 1020 трофеїв, і «Смак перемоги» тепер покаже 1020, як найбільше число
+Просто вигравайте більше трофеїв, ніж втрачаєте - і отримаєте нове досягнення.
+                                </div>
+                            </div>
+                        </div>                           
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading10">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Я знаходжу гравців куди більш високого рівня
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                <div class="panel-body">
+                                    Система підбору супротивників заснована виключно на трофеях. Якщо у гравця з 10 рівнем ратуші дуже мало трофеїв, то він може отримати будь-якого супротивника.
+
+До того ж діапазон пошуку досить великий - це потрібно, щоб гравці завжди могли знайти, з ким битися. Це палиця з двома кінцями: іноді на вас нападає куди більш сильна армія, а іноді вам пропонують напасти на село, розгромити яку нічого не варто.
+
+Якщо різниця трофеїв між вами і супротивником була занадто велика, це, швидше за все, була помста. Помститися гравцям, які напали на село, можна за допомогою кнопки «Помститися» на екрані Хід битви. Нападаючи таким способом, ви пропускаєте систему підбору супротивників, і це може призвести до величезної різниці в трофеях.
+
+Ми працюємо над функцією, яка дозволить чітко бачити, які атаки - помста, так що слідкуйте за новинами!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading11">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Дивіться облогу вашого села в реальному часі!
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                <div class="panel-body">
+                                    Тепер ви можете спостерігати за облогою села в реальному часі.
+
+Якщо у вас включені повідомлення, вам повідомлять про облогу села. Тут же завантаживши гру, ви можете слідкувати за нападом в реальному часі. Дивіться, як ваша захист змітає ворожу армію, або віддається розпачу, дивлячись як село знищують.
+
+Якщо ви пропустили можливість подивитися атаку в реальному часі, то завжди можете подивитися повтор з ходу оборони, як і колись.
+                                </div>
+                            </div>
+                        </div>                                                                                                                                                
+                    </div>
+                </div>
+          <!--    </div>   -->       
+<!-------- Кінець блоку атака і оборона----->                     
+                    
+                    
+            <div class="thumbnail">
+                <img src="im/baner.jpg" alt="Банер" />
+            </div>
+                </div>
+            </div>
+
+            <!-- банер сайту -->
+
+
+
+            <!-- Низ сайту -->
+
+            <footer class="footer" id="footer">
+                <div class="row" >
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Розділи сайту:</font></b>
+                                <li>
+                                    <a href="index.html">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Цікаві розділи сайту:</font></b>
+                                <li>
+                                    <a href="#">Написати нам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b><font color="white">Завантажити Clash of Clans</font></b>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                                        </li>
+                                <li>
+                                    <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                                </li>
+                                <li>
+                                    <i>
+                                        <font color="white">  Поточна версія: 7.156.4 </i>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                                <li>
+                                    <font size="2" color="white">Автор сайту - Небасуй Вадим</font>
+                                </li>
+                                <li>
+                                    <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Підключення догори -->
+            </footer>
+            <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+
+            <div class="row" >
+                <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+                </div>
+            </div>
+        </div><!-- /container -->
+
+        <!-- JavaScript-ядро Bootstrap
+================================================== -->
+        <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="dist/js/bootstrap.js"></script>
+        <script src="../../assets/js/docs.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+</html>

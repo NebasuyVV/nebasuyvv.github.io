@@ -1,0 +1,408 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Короткий опис сторінки">
+  <meta name="keywords" content="Ключові слова до сторінки">
+  <meta name="author" content="Автор Небасуй В.В. - (Autor - Nebasuy Vadym V.)">
+  <link rel="icon" href="favicon.ico">
+    <title>Clash of Clans</title>
+
+    <!-- CSS-ядро Bootstrap -->
+    <link href="/dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Теми Bootstrap -->
+    <link href="/dist/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Підібрані стилі саме для цього шаблона -->
+    <link href="/dist/css/theme.css" rel="stylesheet">
+    <!-- Це чисто для цілей налагодження. Вам не потрібно копіювати цих два рядки! -->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+    <!-- Лічильники Яндекс та Гугл -->
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</head>
+
+  <body role="document">
+    <!-- Фіксована навігаційна панель -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Відкрити меню</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+            <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Герої</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Король Варварів </a></li>
+                                <li> <a tabindex="-1" href="#">Королева Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Варвар</a></li>
+                                <li> <a tabindex="-1" href="#">Лучниця</a></li>
+                                <li> <a tabindex="-1" href="#">Гоблін</a></li>
+                                <li> <a tabindex="-1" href="#">Гігант</a></li>
+                                <li> <a tabindex="-1" href="#">Стінобій</a></li>
+                                <li> <a tabindex="-1" href="#">Повітряна куля</a></li>
+                                <li> <a tabindex="-1" href="#">Маг</a></li>
+                                <li> <a tabindex="-1" href="#">Цілителька</a></li>
+                                <li> <a tabindex="-1" href="#">Дракон</a></li>
+                                <li> <a tabindex="-1" href="#">П.Е.К.К.А</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Темна казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Міньйон</a></li>
+                                <li> <a tabindex="-1" href="#">Вершник на кабані</a></li>
+                                <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                <li> <a tabindex="-1" href="#">Голем</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                <li> <a tabindex="-1" href="#">Відьма</a></li>
+                            </ul>
+                        </li>
+            <li><a href="#"> Будівельник</a></li>
+            <li><a href="#"> Житель</a></li>
+          </ul>
+      </li>
+              <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Захисні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                <li> <a tabindex="-1" href="#">Пастки</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Військові</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Ресурсні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Інші</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                            </ul>
+                        </li>
+            <li><a href="#">Ратуша (Town Hall)</a></li>
+          </ul>
+      </li>
+            <li class="hidden-sm hidden-md"><a href="#contact">Розстановки</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Цікаві бази</a></li>
+                <li><a href="#">Фан-арт</a></li>
+                <li><a href="#">Меми</a></li>
+                <li><a href="#">Інше</a></li>
+              </ul>
+            </li>
+           <li class="hidden-sm hidden-md"><a href="help-faq.html">Допомога</a></li>
+           <li class="active hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+            <li>
+                <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                 <!-- Блок переключення мов
+                   <div class="flag" style="vertical-align:middle">
+                    <a href="">
+                    <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                    <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                    <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                    </a>
+                    <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                    <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                    </a>
+                </div>
+                -->
+            </li>
+    </ul>
+      <!--   <form class="navbar-form navbar-left" role="search">
+            <div class="form-group" style="vertical-align:middle;">
+              <input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+            </div>
+        <button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button> 
+        </form> -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- Кінець верхньої навігаційної панелі -->
+<div class="container">
+<!-- Початок блоку із слайдером -->  
+    <div class="contakt">
+        <div class="row" style="margin-top:70px;">
+            <div class="col-md-6">
+                <h2><b> Контакти з нами </b> </h2> <hr>
+                    <div class="panel panel-default">
+               <!-- Default panel contents -->
+               <!-- Table -->
+                  <table class="table" style="text-align: center">
+                    <tbody>
+                      <tr>
+                        <td>
+                        <a href="#" target="_blank" onMouseOver="document.googleplus1.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus1.src='im/icon/googleplus0.png'">
+                        <img src="im/icon/googleplus0.png" name="googleplus1" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        </td>
+                        <td>Заходьте до нас в Google Plus</td>
+                      </tr>
+                        
+                      <tr>
+                        <td>
+                        <a href="#" target="_blank" onMouseOver="document.facebook1.src='im/icon/facebook1.png'" onMouseOut="document.facebook1.src='im/icon/facebook0.png'">
+                        <img src="im/icon/facebook0.png" name="facebook1" width=31 height=31 alt="facebook clash of clans ukraine"></td>
+                        <td>Читайте нас на Facebook</td>
+                      </tr>
+                        
+                      <tr>
+                        <td><a href="#" target="_blank" onMouseOver="document.twitter1.src='im/icon/twitter1.png'" onMouseOut="document.twitter1.src='im/icon/twitter0.png'">
+                        <img src="im/icon/twitter0.png" name="twitter1" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        </td>
+                        <td>Слідкуйте за нами в Twitter</td>
+                      </tr>
+                      <tr>
+                        <td> <a href="#" target="_blank" onMouseOver="document.vkontakte1.src='im/icon/vk1.png'" onMouseOut="document.vkontakte1.src='im/icon/vk0.png'">
+                        <img src="im/icon/vk0.png" name="vkontakte1" width=31 height=31 alt="vkontakte clash of clans ukraine">
+                        </a>
+                        </td>
+                        <td>Спілкуйтесь з нами в Vkontakte</td>
+                      </tr>
+                      <tr>
+                        <td>
+                        <a href="#" target="_blank" onMouseOver="document.youtube1.src='im/icon/YouTube2.png'" onMouseOut="document.youtube1.src='im/icon/YouTube0.png'">
+                         <img src="im/icon/YouTube0.png" name="youtube1" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        </td>
+                        <td>Дивіться наш канал на YouTube</td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div> 
+             </div>
+            <div class="col-md-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42811475.134767376!2d11.191260289731314!3d49.08654387396653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf4ee15a4505%3A0x764931d2170146fe!2z0JrQuNGX0LI!5e0!3m2!1suk!2sua!4v1432291982660" width="550" height="338" frameborder="-1" style="border:1"></iframe>
+            </div>
+        </div>
+      <div class="row">
+        <div class="col-md-10">
+            <h3 style="text-align:center"><b>Написати нам з будь-якого приводу: </b></h3>
+             <form class="form-horizontal" role="form">
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="formGroupInputSmall">Ваше ім'я:</label>
+                <div class="col-sm-8">
+                  <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Уведіть своє ім'я..">
+                </div>
+              </div>
+              <div class="form-group form-group-sm">
+                <label class="col-sm-2 control-label" for="formGroupInputSmall">Ваш e-mail:</label>
+                <div class="col-sm-8">
+                  <input class="form-control" type="text" id="formGroupInputSmall" placeholder="Уведіть свій e-mail..">
+                </div>
+              </div>     
+            </form>
+            <h4 style="text-align:center"><b>Залиште своє повідомлення: </b></h4>
+            <div class="col-md-4">
+                <div style="text-align: center;margin-top: 30px;">
+                    <button type="button" class="btn btn-primary btn-lg">Відправити нам листа</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <textarea class="form-control" rows="5" placeholder="Уведіть своє повідомлення.." style="margin: 0px -7.5px 0px 0px; width: 451px; height: 118px;"></textarea>
+            </div>
+        </div>
+      
+      <div class="col-md-2 hidden-xs hidden-xs hidden-sm" style="margin-left: -150px;">
+        <img src="im/contact/pekka.png" alt="clash of clans persons" class="img-rounded" style="height: 325px">
+      </div>
+   </div>
+
+    
+    <!-- Низ сайту -->
+
+    <footer class="footer" id="footer" style="margin-top: 20px;">
+        <div class="row" >
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm"> 
+                <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Розділи сайту:</font></b>
+                        <li>
+                        <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3 hidden-xs">
+                   <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Цікаві розділи сайту:</font></b>
+                        <li>
+                        <a href="#">Написати нам</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b><font color="white">Завантажити Clash of Clans</font></b>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="/im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                        </li>
+                        <li>
+                            <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="/im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                        </li>
+                        <li>
+                        <i>
+                            <font color="white">  Поточна версія: 7.156.4 </i>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="col-xs-6 col-md-3">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a class="hidden-xs" href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                        <li>
+                           <div class="hidden-xs"> <font size="2" color="white">Автор сайту - Небасуй Вадим</font> </div>
+                        </li>
+                        <li>
+                            <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </footer>
+       <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+
+    <div class="row" >
+        <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+     </div>
+
+    </div> 
+    </div><!-- /container -->
+
+    <!-- JavaScript-ядро Bootstrap
+    ================================================== -->
+    <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="/dist/js/bootstrap.js"></script>
+    <script src="../../assets/js/docs.js"></script>
+    <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+    <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+</html>

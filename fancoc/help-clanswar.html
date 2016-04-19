@@ -1,0 +1,613 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Короткий опис сторінки">
+        <meta name="keywords" content="Ключові слова до сторінки">
+        <meta name="author" content="Автор Небасуй В.В. - (Autor - Nebasuy Vadym V.)">
+        <link rel="icon" href="favicon.ico">
+        <title>Clash of Clans</title>
+
+        <!-- CSS-ядро Bootstrap -->
+        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <!-- Теми Bootstrap -->
+        <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+        <!-- Підібрані стилі саме для цього шаблона -->
+        <link href="dist/css/theme.css" rel="stylesheet">
+        <!-- Це чисто для цілей налагодження. Вам не потрібно копіювати цих два рядки! -->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- Лічильники Яндекс та Гугл -->
+        <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    </head>
+
+    <body role="document">
+        <!-- Фіксована навігаційна панель -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Відкрити меню</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Герої</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Король Варварів </a></li>
+                                        <li> <a tabindex="-1" href="#">Королева Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Варвар</a></li>
+                                        <li> <a tabindex="-1" href="#">Лучниця</a></li>
+                                        <li> <a tabindex="-1" href="#">Гоблін</a></li>
+                                        <li> <a tabindex="-1" href="#">Гігант</a></li>
+                                        <li> <a tabindex="-1" href="#">Стінобій</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна куля</a></li>
+                                        <li> <a tabindex="-1" href="#">Маг</a></li>
+                                        <li> <a tabindex="-1" href="#">Цілителька</a></li>
+                                        <li> <a tabindex="-1" href="#">Дракон</a></li>
+                                        <li> <a tabindex="-1" href="#">П.Е.К.К.А</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Темна казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Міньйон</a></li>
+                                        <li> <a tabindex="-1" href="#">Вершник на кабані</a></li>
+                                        <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                        <li> <a tabindex="-1" href="#">Голем</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                        <li> <a tabindex="-1" href="#">Відьма</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> Будівельник</a></li>
+                                <li><a href="#"> Житель</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Захисні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                        <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                        <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                        <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                        <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                        <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                        <li> <a tabindex="-1" href="#">Пастки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Військові</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                        <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                        <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Ресурсні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                        <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Інші</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                        <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                        <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                        <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ратуша (Town Hall)</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-sm hidden-md"><a href="schems.html">Розстановки</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Цікаві бази</a></li>
+                                <li><a href="#">Фан-арт</a></li>
+                                <li><a href="#">Меми</a></li>
+                                <li><a href="#">Інше</a></li>
+                            </ul>
+                        </li>
+                        <li class="active hidden-sm hidden-md"><a href="help.html">Допомога</a></li>
+                        <li class="hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+                        <li>
+                             <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                             <!-- Блок переключення мов
+                               <div class="flag" style="vertical-align:middle">
+                                <a href="">
+                                <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                                <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                                <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                                </a>
+                                <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                                <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                                </a>
+                            </div>
+                            -->
+                        </li>
+                    </ul>
+                    <!--   <form class="navbar-form navbar-left" role="search">
+<div class="form-group" style="vertical-align:middle;">
+<input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+</div>
+<button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button>
+</form> -->
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!-- Кінець верхньої навігаційної панелі -->
+        <div class="container">
+            <!-- Початок блоку із слайдером -->
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-4" style="text-align: center;">
+                      <div class="row">                       
+                         <div class="col-md-6" style="text-align: left;">
+                              <h2><b> Допомога </b></h2>                        
+                         </div>
+                         <div class="col-md-6" style="text-align: right"> 
+                              <img alt="COC" src="im/icon/FAQCOC.png" />                          
+                         </div>
+                      </div>
+                    <hr>
+                    <div class="btn-group-vertical" role="group" aria-label="true">
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-faq.html'" >Найчастіші запитання</button>
+                        <button type="button" class="btn btn-success active" aria-pressed="true"  onclick="window.location.href='help-clanswar.html'" >Війни кланів</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-atak.html'" >Атака і оборона</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-first.html'" >Самий початок</button>
+                        <button type="button" class="btn btn-success" aria-pressed="true" onclick="window.location.href='help-res.html'" >Ресурси, кристали та опалата</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-bilding.html'" >Будівлі та споруди</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-clansunit.html'" >Кланові війська</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-helps.html'" >Підключення, та зміна поселень</button>
+                    </div>
+                    <div class="row"  style="text-align: center;">
+                         <img alt="barbarian_help" src="im/helps/barbarian_help.png" style="margin-top:5px;text-align:center;margin-top: 15px; height: 350px;"/> 
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+<!------- Блок найчастіші запитання ------->
+            <!--      <div id="faq" class="collapse"> -->
+                   <div id="accordinOne" class="collapsed">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       Що таке війна кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Взявши участь у війні кланів, ваш клан може раз і назавжди показати всьому                                             ігровому спільноті, хто головний на полі бою.
+
+                                    Війна кланів - це стратегічний бій двох випадково обраних кланів. У обох кланів                                       має бути однакова кількість учасників і приблизно одна сила.
+
+                                    У війни кланів є два етапи:
+ 
+                                    1) День підготовки
+
+                                    Після оголошення війни у вас є 24 години на те, щоб підготуватися до прийдешніх                                       битв. У цей час ви можете вносити зміни, поки не почалася війна. Ви можете                                             змінювати розстановку військової бази і жертвувати війська соклановцев.
+ 
+                                    Зміни військової бази під час війни кланів ніяк не відіб'ються на вашій основній                                       селі, коли війна закінчиться. Це також означає, що всі солдати, пожертвувані для                                       вашої військової бази, чи не з'являться у вашій звичайному селі, і навпаки.
+                                    
+                                    2) День битви
+
+                                    Коли закінчаться 24 години підготовки, ваш клан повинен бути готовий до війни і                                       жадати перемоги! У кожного учасника в день бою є дві атаки, так що пам'ятайте, що                                     кожна атака на рахунку. По закінченні війни клан, у якого буде найбільше зірок за                                     атаки, буде визнаний переможцем.
+                                    
+                                    Пам'ятайте, що почати війну кланів і брати участь в ній можна абсолютно                                               безкоштовно, і на відміну від звичайних битв за участю декількох гравців, клани                                       самі вирішують, коли і як вступити у війну. Клани зовсім не зобов'язані брати                                         участь у війнах кланів.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Як почати війну кланів? 
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    Глави та співкерівники кланів, в яких є хоча б 10 учасників, можуть почати війну,                                     відкривши екран війни кланів і натиснувши на кнопку «Почати війну».
+                                    Це запустить пошук клану супротивника. Система підбере клан з такою ж силою (як в                                     плані атаки, так і захисту) і таким же числом учасників. Війна кланів почнеться                                       відразу ж, як тільки буде знайдений гідний супротивник.
+                                    Пошук клану може зайняти декілька хвилин, але вам зовсім не обов'язково чекати на                                     екрані підбору супротивників. Просто натисніть «Додому» і продовжуйте грати. Коли                                     система знайде вам противника, вона вас повідомить.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Як підготуватися до війни кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    Підготовка до воєн кланів - це настільки серйозно, що ми виділили на неї цілий день! День підготовки починається відразу після того, як система підбору знаходить вам гідного супротивника.
+
+Для початку переконайтеся, що військова база готова тримати оборону. Захист дуже важлива, тому що чим більше баз інших гравців ви знищите, тим більше зірок отримаєте. А зірки ведуть до перемоги у війнах кланів. В принципі, знищення ратуші супротивника дасть вам перемогу з однією зіркою, так що постарайтеся поліпшити захист своєї військової бази, використовуючи засіб редагування військової бази. Пам'ятайте, що змінити військову базу можна тільки в день підготовки. Потім цей розклад буде використаний в день битви і залишиться незмінним після того, як закінчиться війна, до наступного дня підготовки.
+
+На військовій базі залишаться ті ж будівлі, що і в вашої звичайної селі. Тим не менше, кожен раз при додаванні нової будівлі в село вам необхідно перейти в інвентар військової бази, щоб розмістити його і на військовій базі. Гра не вибирає довільну точку на військовій базі для нової будівлі - вам необхідно самостійно вирішити, де його поставити. Якщо ви залишите нову будівлю в інвентарі, воно не з'явиться на військовій базі в день бою.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingfour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Як взяти участь у війні кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                <div class="panel-body">
+                                    Щоб вступити у війну кланів, ви повинні бути частиною клану, коли його глава або співкерівник натиснуть «Почати війну». Якщо ви приєднаєтеся до клану після цього, то зможете бути тільки спостерігачем на війні, а не її учасником.
+
+Під час війни ви можете навіть покинути клан, але ваша військова база буде видна на військовій карті навіть після цього. Ваш відхід з клану ніяк не вплине на хід війни.
+
+Але поки не закінчиться поточна війна в попередньому клані, ви не зможете брати участь в іншій війні кланів, якщо вступите в інший клан. Заглянувши в ваш профіль, інші гравці зможуть побачити, що ви все ще берете участь в незавершеним війні. До закінчення попередньої війни кланів ви не зможете взяти участь у новій.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Як перемогти у війні кланів?!
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                        Результат війни кланів визначається лише тим, який з кланів виграє більше зірок під час війни. Якщо більше одного гравця нападає на базу, то зарахується тільки найсильніша атака. Це означає, що якщо один з членів клану вже заробив на базі противника 3 зірки, то повторний напад не принесе вашому клану ніяких очок.
+
+Точно так само, якщо ви думаєте напасти на базу, на якій вже заробили 2 зірки, то для вас там залишається всього одна (і то якщо стерти базу з лиця землі).
+
+Перемога у війні кланів вимагає планування і тактики. Вашій клану належить вирішити, як досягти кращого результату силами учасників. Спілкуйтеся з вашими соклановцев, підшукуйте найбільш вигідних супротивників і робіть так, щоб кожна атака була зарахована. Не забувайте, що гра допомагає знаходити гідних супротивників, пропонуючи рекомендовані мети.
+
+Кожен учасник клану, що зробив успішну атаку під час війни, отримає бонусну видобуток по її завершенню, але тільки клан-переможець отримає все.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Як отримати військовий бонус?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+У кожній Війні Кланів у вас є шанс отримати військовий бонус. Бонус за перемогу у війні можна забрати з Фортеці Клану після закінчення війни. У Фортеці може перебувати лише обмежена кількість ресурсів, тому не забувайте регулярно їх забирати! Все, що не влізе в скрині клану, буде втрачено.
+
+Щоб отримати бонус в повному розмірі, ваш клан повинен виграти війну. Якщо клан програє чи воює внічию, бонус стане куди менше. Якщо ви не виграєте жодного бою за війну, то і не отримаєте нічого.
+
+Ресурси в Фортеці захищені не повністю: при нападі частина не забраного бонусу буде втрачена. А ще пам'ятайте, що військовий бонуси не буде зарахований в досягненні «Військова здобич», поки ви не заберете його з Фортеці.
+
+Крім бонусу є і видобуток, яку ви можете отримати відразу ж, напавши на військову базу супротивника. Звичайно, зазвичай це дурниця в порівнянні з бонусом за перемогу у війні, але видобуток тут же потрапить у ваші сховища, незалежно від перемоги в битві або війні.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Що відбувається з селом під час війни кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                       Під час війни кланів ваша село завжди буде в безпеці, оскільки бої проходять в іншій області, а не у вашому селі, як це відбувається зазвичай.
+
+Незважаючи на те що військова база - майже точна копія вашого села, дуже важливо пам'ятати, що військова база, яка використовується під час воєн - це абсолютно самостійна село.
+
+Завдяки редактору та збереженню планувань у вас може бути до трьох різних планувань звичайної села і 3 військових бази одночасно. Тобто, 6 планувань всього.
+
+Саме на військовій базі гравці готуються і атакують інші військові бази, звичайної села це не стосується. Ви не ризикуєте ресурсами, трофеями і щитом свого села.
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading8">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Що отримає мій клан після перемоги у війні кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                <div class="panel-body">
+                                       Ваш клан знайде радість перемоги, повагу інших кланів і визнання Вашої великої сили, пам'ять про яку збережеться в століттях.
+
+До того ж клан отримає зайве очко в показник «Виграно воєн», який відображається у статистиці клану.
+
+На індивідуальному рівні кожен член перемігшого клану негайно нагороджується повним обсягом бонусної видобутку, отриманої в ході переможних атак. Нагадаємо, що ви можете накопичувати цей бонус, тільки атакуючи і перемагаючи військові бази супротивників.
+                                </div>
+                            </div>
+                        </div>                                                
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading9">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        Що буде, якщо клан програє чи буде нічия?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                <div class="panel-body">
+                                       Якщо клан програє війну, вам доведеться зіткнутися з ганьбою поразки і різаниною, спогади про минулі часи звернуться в прах, а ім'я клану буде забутою ... До наступної війни кланів.
+
+Учасники переможеного клану понесуть жорстоке покарання у вигляді неотриманих бонусів перемоги: видобутку, яку отримують під час нападів на військові бази противника. Звичайно, дещо у них залишиться, але це всього лише крихти порівняно з усім, що вони могли отримати.
+
+Якщо по закінченню дня битв у обох кланів буде однакова кількість зірок, результатом стане нічия. Учасники обох кланів отримають військовий бонус, але це буде лише частина видобутку, так як в результаті ніхто не переможе. Покарання не так велика, як при ураженні, але все одно пропаде чимало добра.
+                                </div>
+                            </div>
+                        </div>                           
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading10">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                       Я можу вибрати клан для оголошення війни?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                <div class="panel-body">
+                                    Немає ви не можете вибрати певний клан, наприклад, клан одного.
+Ми хочемо, щоб війни кланів йшли між кланами, які більш-менш рівні за силою. Пошук йде серед вийшли на стежку війни кланів, у яких сила і кількість учасників приблизно такі ж, як у вас.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading11">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Як підбираються противники у війні кланів?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                <div class="panel-body">
+                                    Противники для війни кланів підбираються на основі загальної сили учасників. Сила розраховується виходячи з можливостей атаки (солдат, місткості таборів, заклинань і героїв) і захисту (захисні споруди, стіни, пастки і герої). На відміну від багато режиму, тут трофеї не враховуються.
+
+Розклад і дизайн бази теж ніяк не впливає на силу. Єдиний спосіб збільшити силу - покращувати війська, захист, заклинання і т.п.
+                                </div>
+                            </div>
+                        </div>                       
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading12">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                         Чи йдуть солдати, пожертвувані під час війни кланів, в рахунок досягнень?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse12" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading12">
+                                <div class="panel-body">
+                                    Війська, пожертвувані під час воєн кланів, не будуть зараховані в досягненні «Друг в біді» (і не приносять очки досвіду).
+
+Ми хочемо, щоб ваші соклановцев жертвували солдатів під час війни кланів з єдиною метою: перемогти у війні. Ми хочемо, щоб гравців мотивувала сама ідея, а не самоцвіти або досягнення. Звичайно, ми зовсім не хочемо сказати, що всі гравці будуть жертвувати солдатів без розбору (більшість клановцев чесні хлопці), але є й ті, хто віддасть найдешевших солдатів (наприклад, гоблінів) лише для того, щоб швидше отримати досягнення.
+
+Тепер це ще легше провернути, так як під час війни кланів ви можете позбутися від військ, які вам не потрібні - тим більше що між пожертвуваннями немає перерви.
+
+Повторюся, більшість клановцев поводяться по-чесному, але завжди є ті, хто використовує недоліки в правилах. Ми не хочемо, щоб чесні гравці відчували, що їх чесність грає з ними злий жарт. Ми впевнені, що це правильне рішення.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading13">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                    Противник шпигує за нашим кланом! Хіба це чесно?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse13" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading13">
+                                <div class="panel-body">
+                                    Шпигунство за кланом, звичайно, складно назвати спортивним поведінкою, але це не порушує жодних правил Clash of Clans.
+
+Ми розуміємо, що вам це неприємно, але Війни кланів - це серйозно. Деякі клани готові на багато що заради перемоги. Дивіться уважно, кого ви приймаєте в клан! Як мовиться, в любові і на війні всі засоби хороші. А небажаних учасників можна тримати на відстані, зробивши клан «на запрошення» або й зовсім «закритим».
+                                </div>
+                            </div>
+                        </div>                                                                                                                                                          
+                    </div>
+                </div>
+          <!--    </div>   -->       
+<!-------- Кінець блоку із найчастішими питаннями ----->                     
+                    
+                    
+            <div class="thumbnail">
+                <img src="im/baner.jpg" alt="Банер" />
+            </div>
+                </div>
+            </div>
+
+            <!-- банер сайту -->
+
+
+
+            <!-- Низ сайту -->
+
+            <footer class="footer" id="footer">
+                <div class="row" >
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Розділи сайту:</font></b>
+                                <li>
+                                    <a href="index.html">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Цікаві розділи сайту:</font></b>
+                                <li>
+                                    <a href="#">Написати нам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b><font color="white">Завантажити Clash of Clans</font></b>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                                        </li>
+                                <li>
+                                    <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                                </li>
+                                <li>
+                                    <i>
+                                        <font color="white">  Поточна версія: 7.156.4 </i>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                                <li>
+                                    <font size="2" color="white">Автор сайту - Небасуй Вадим</font>
+                                </li>
+                                <li>
+                                    <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Підключення догори -->
+            </footer>
+            <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+
+            <div class="row" >
+                <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+                </div>
+            </div>
+        </div><!-- /container -->
+
+        <!-- JavaScript-ядро Bootstrap
+================================================== -->
+        <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="dist/js/bootstrap.js"></script>
+        <script src="../../assets/js/docs.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+</html>

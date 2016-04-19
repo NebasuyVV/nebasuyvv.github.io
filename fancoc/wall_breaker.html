@@ -1,0 +1,941 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+     <!-- Meta, title, CSS, favicons, etc. -->
+     <meta charset="utf-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <meta name="description" content="Стінобої скелети в руках яких тримають бомби та мають шапку авіатора на голові. Дуже веселі та грайливі юніти в COC.">
+     <meta name="keywords" content="Стінобій, Стенобой, wall, breaker, COC, clash of clans, clash, clans, герой, клеш, помощь, допомога, атака, стратегія, оборона">
+     <meta name="author" content="Nebasuy Vadym V.">
+     <link rel="icon" href="favicon.ico">
+     <title>Стінобій Clash of Clans</title>
+
+    <!-- CSS-ядро Bootstrap -->
+    <link rel="stylesheet"  href="/dist/css/bootstrap.css" >
+    <!-- Теми Bootstrap -->
+    <link href="/dist/css/bootstrap-theme.css" rel="stylesheet">
+    <!-- Підібрані стилі саме для цього шаблона -->
+    <link href="/dist/css/theme.css" rel="stylesheet">
+    <!-- Стиль для галереї -->
+    <link href="/dist/css/unite-gallery.css"  type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="/dist/css/sass-compiled.css" />
+    
+    <script type='text/javascript' src="/dist/js/jquery-11.0.min.js"></script>
+    <script type='text/javascript' src="/dist/js/unitegallery.min.js"></script>
+    <script type='text/javascript' src="/dist/js/ug-theme-tiles.js"></script>
+
+    <!-- Лічильники Яндекс та Гугл -->
+    <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+</head>
+  <body role="document">
+    <!-- Фіксована навігаційна панель -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Відкрити меню</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+            <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Герої</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="barbarian-king.html">Король Варварів </a></li>
+                                <li> <a tabindex="-1" href="archer-queen.html">Королева Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="barbarian.html">Варвар</a></li>
+                                <li> <a tabindex="-1" href="archer.html">Лучниця</a></li>
+                                <li> <a tabindex="-1" href="goblin.html">Гоблін</a></li>
+                                <li> <a tabindex="-1" href="gigant.html">Гігант</a></li>
+                                <li> <a tabindex="-1" href="wall_breaker.htmlbreaker.html">Стінобій</a></li>
+                                <li> <a tabindex="-1" href="balloon.html">Повітряна куля</a></li>
+                                <li> <a tabindex="-1" href="wizard.html">Маг</a></li>
+                                <li> <a tabindex="-1" href="hilka.html">Цілителька</a></li>
+                                <li> <a tabindex="-1" href="drakon.html">Дракон</a></li>
+                                <li> <a tabindex="-1" href="pekka.html">П.Е.К.К.А</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Темна казарма</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="minion.html">Міньйон</a></li>
+                                <li> <a tabindex="-1" href="hog rider.html">Вершник на кабані</a></li>
+                                <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                <li> <a tabindex="-1" href="#">Голем</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                <li> <a tabindex="-1" href="witch.html">Відьма</a></li>
+                            </ul>
+                        </li>
+            <li><a href="bilding.html"> Будівельник</a></li>
+            <li><a href="#"> Житель</a></li>
+          </ul>
+      </li>
+              <li class="dropdown">
+        <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Захисні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                <li> <a tabindex="-1" href="#">Пастки</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Військові</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Ресурсні</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                            </ul>
+                        </li>
+            <li class="dropdown-submenu" role="menu">
+                            <a href="#"> Інші</a>
+                            <ul class="dropdown-menu">
+                                <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                            </ul>
+                        </li>
+            <li><a href="#">Ратуша (Town Hall)</a></li>
+          </ul>
+      </li>
+            <li class="hidden-sm hidden-md"><a href="shems.html">Розстановки</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="news.html">Новини</a></li>
+                <li><a href="fan_baz.html">Цікаві бази</a></li>
+                <li><a href="fan-art.html">Фан-арт</a></li>
+                <li><a href="mems.html">Меми</a></li>
+                <li><a href="other.html">Інше</a></li>
+              </ul>
+            </li>
+           <li class="hidden-sm hidden-md"><a href="help-faq.html">Допомога</a></li>
+           <li class="hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+           <li></li>
+            <li>
+                <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                <!-- Блок переключення мов
+                   <div class="flag" style="vertical-align:middle">
+                    <a href="">
+                    <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                    <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                    <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                    </a>
+                    <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                    <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                    </a>
+                </div>
+                -->
+            </li>
+    </ul>
+      <!--   <form class="navbar-form navbar-left" role="search">
+            <div class="form-group" style="vertical-align:middle;">
+              <input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+            </div>
+        <button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button> 
+        </form> -->
+
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+<!-- Кінець верхньої навігаційної панелі -->
+<div class="container">
+    <div class="row" style="margin-top:70px">
+        <div class="col-md-4" >
+            <div class="slides">
+                <ul> <!-- Слайды -->
+                    <li>
+                        <img src="/im/wall_breaker/wall_breaker.png" alt="wall breaker COC" width="225px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/wall_breaker/wall_breaker_featured.png" alt="wall breaker Clash" width="240px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/wall_breaker/wall_breaker_rendering_icon.png" alt="wall breaker COC" width="300px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                    <li>
+                        <img src="/im/wall_breaker/wall_breaker_featured.png" alt="wall breaker Clash" width="225px" />
+                        <!--<div>Описание #3</div> -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-1" style="text-align: center;margin-top: inherit;">
+            <script type="text/javascript">(function() {
+              if (window.pluso)if (typeof window.pluso.start == "function") return;
+              if (window.ifpluso==undefined) { window.ifpluso = 1;
+                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+                s.type = 'text/javascript'; s.charset='UTF-8'; s.async = true;
+                s.src = ('https:' == window.location.protocol ? 'https' : 'http')  + '://share.pluso.ru/pluso-like.js';
+                var h=d[g]('body')[0];
+                h.appendChild(s);
+              }})();
+            </script>
+            <div class="pluso" data-background="transparent" data-options="medium,square,line,vertical,counter,theme=05"               data-services="vkontakte,odnoklassniki,facebook,twitter,google,moimir,email,print">
+            </div>
+        </div>
+        <div class="col-md-7">
+            <h2 class="text-success">
+                <strong><i><tt> Стінобій </tt></i></strong>
+                <img  src="/im/flat_icons/wall_breaker.png" alt="wall breaker flat icon" height="50px" align="right"/>            
+            </h2> 
+            <hr>
+            <p style="text-align:center"> <i>«<strong>Стінобої</strong> - одні з крихких героїв у <strong>Clash of Clans</strong>. Які недивлячись на їх крихкість можуть переносити досить масивні бомби, і призначені для однієї мети руйнувати стіни!» </i></p>
+            <hr>
+            <div class="row" style="text-align:center">
+                <div class="col-md-12">
+                    <table align="center" summary="таблиця лвл героя Стінобоя">
+                    <th> 
+                    <img class="img-responsive" style="width:125px;height:auto;" src="im/wall_breaker/wall_breaker_lvl1.png" alt="стінобої лвл 1-2">
+                    </th>
+                    <th style="text-align: -webkit-center;">    
+                    <div class="glyphicon glyphicon-arrow-right" style="width:65px;font-size: xx-large;"></div>
+                    </th>
+                    <th> 
+                    <img class="img-responsive" style="width:125px;height:auto;" src="im/wall_breaker/wall_breaker_lvl3.png" alt="Стінобої лвл 3-4">
+                    </th>
+                    <th style="text-align: -webkit-center;">
+                    <div class="glyphicon glyphicon-arrow-right" style="width:65px;font-size: xx-large;"></div>
+                    </th>
+                    <th> 
+                    <img class="img-responsive" style="width:125px;height:auto;" src="im/wall_breaker/wall_breaker_lvl5.png" alt="Стінобої лвл 5">
+                    </th>
+                    </table>    
+                    <table align="center" summary="таблиця лвл героя стінобоя лвл 6">   
+                    <th> 
+                    <img class="img-responsive" style="width:110px;height:auto;" src="im/wall_breaker/wall_breaker_lvl6.png" alt="Стінобої лвл 6">
+                    </th>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+     
+    <!-- Банер сайту 
+        <div class="thumbnail" >
+            <img src="/im/baner_2.jpg" style="height:75px;" alt="Банер_2"> 
+        </div>
+    <!-- Основний запис -->
+    <div class="thebasic">
+        <ul class="nav nav-tabs">
+          <li role="presentation" class="active"><a href="#Опис" data-toggle="tab">Опис</a></li>
+          <li role="presentation"><a href="#Характеристики" data-toggle="tab" >Характеристики</a></li>
+          <li role="presentation"><a href="#цікавіфакти" data-toggle="tab" >Цікаві факти</a></li>
+          <li role="presentation"><a href="#фотовідео" data-toggle="tab">Фото та відео</a></li>
+        </ul>
+        <div class="tab-content">
+              <div class="tab-pane active" id="Опис" style="text-align: justify;">
+                  <div>
+                    <img src="im/wall_breaker/wall_breaker_rendering_icon.png" vspace="5" hspace="5" style="float:left;max-width: 325px;">
+                      <p><strong>Стінобої</strong> ці живчики незважаючи на свою крихкість переносять масивні бомби, які призначені для пріоритетної мети - руйновання стіни. Підбігаючи до стіни в щільну він приводить у дію бомбу, яку несе в руках і вибухає разом з нею прямо як шахід. Стенобоі наносять утрату по стінах з коеффіцентомурона в 40х. На жаль, після детонації вони в жодному разі гинуть, будь то стіна або ж війська супротивника. Стенобоі після висадки будуть атакувати стіни до тих пір, поки вони все не будуть знищені.
+                        <img src="im/coc_logo.png" vspace="5" hspace="15" style="float:right;max-width: 250px;">
+                      </p>
+                      <p>
+                          <b>Характеристики та тактики</b><br>
+                          Стінобій нероздільний частина армій для більшості гравців Clash Of Clans. Ці війни можуть дуже швидко знищити стіни, проте інші війська роблять це досить повільно. Ламаючи першу лінію або дві лінії стіни ворожої бази може гарантувати знищення на 100%.<br>
+Стінобій дуже тендітні, тому потрібно буде скласти кілька відволікаючих одиниць, як гігантів або варварів, щоб дозволити вашому Стінобою зламати стіни.<br>
+                          Стінобої здатні найшвидше руйнувати стіни в Clash of Clans, дайте їм тільки домчати до стіни. Потрібно користуватися цим вмінням Стінобоя тому розчистіть та приверніть увагу захисних споруд від них. Тому перед тим як використати його киньте Гігантів, Големів або інших міцних героїв, щоб вони взяли основний удар від захисних споруд противника, тоді Стінобої зможуть прорватися і знищити стіну. <br>
+Стінобої атакують по колу, коли знищили стіну в одному місці вони шукають іншу секцію стіни щоб знищти її. Щодо оборони ними то вони не досить ефективні в вашому замку, тому спробуйте брати їх тільки при атаках.<br>
+                         
+                      </p>
+
+                      <i>На нашому сайті Ви можете переглянути характеристики про Стінобоя в атаці, обороні, в стані відновлення та цікаві факти. А також Ви можете знайти такуж інформацію і по інших персонажів гри Clash of Clans.</i>
+                  </div>
+              </div>
+              <div class="tab-pane" id="Характеристики">
+              <div style="margin-top: 10px; margin-bottom:10px; border:0px ridge Green; padding: 10px; font-size: 100%; -moz-border-radius: 15px; border-radius:15px; -webkit-border-radius:15px; border-color: silver; color:black; background-color: whitesmoke;text-align: center">
+                <table class="wikitable" border="0" cellpadding="1" cellspacing="1" style="width: 100%; text-align: center;">
+                <tbody><tr>
+                <th scope="col" style="text-align: center;">Приорітетна ціль
+                </th><th scope="col" style="text-align: center;">Тип атаки <img src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;path-prefix=ru&amp;format=webp" alt="Тип урона" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Damagetype.png" data-image-name="Damagetype.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;path-prefix=ru" width="30" height="22" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/a/ad/Damagetype.png/revision/latest/scale-to-width-down/30?cb=20140115013225&amp;amp;path-prefix=ru"    alt="Тип урону"    class=""      data-image-key="Damagetype.png"   data-image-name="Damagetype.png"       width="30"     height="22"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Швидкість переміщення
+                </th><th scope="col" style="text-align: center;">Швидкість атаки <img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;path-prefix=ru&amp;format=webp" alt="Скорость атаки" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Attackspeed.png" data-image-name="Attackspeed.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;path-prefix=ru" width="40" height="20" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/8f/Attackspeed.png/revision/latest/scale-to-width-down/40?cb=20140115013044&amp;amp;path-prefix=ru"    alt="Швидкість атаки"    class=""      data-image-key="Attackspeed.png"   data-image-name="Attackspeed.png"       width="40"     height="20"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Дальність атаки <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;path-prefix=ru&amp;format=webp" alt="Дальность" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Range.png" data-image-name="Range.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;path-prefix=ru" width="30" height="14" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/c/c5/Range.png/revision/latest/scale-to-width-down/30?cb=20140115013450&amp;amp;path-prefix=ru"    alt="Дальність"    class=""      data-image-key="Range.png"   data-image-name="Range.png"       width="30"     height="14"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;">Потрібний лвл казарм
+                </th></tr>
+                <tr>
+                <td> Атака по <br> стінам Х40
+                </td><td> Наземні
+                </td><td> 2
+                </td><td> 1с
+                </td><td> 1 клітинка
+                </td><td> 5
+                </td></tr></tbody></table>
+                <hr>
+                <div class="table-wrapper table-is-wide" style="margin-top: 20px;"><div class="table-scrollable"><table class="wikitable" border="0" cellpadding="1" cellspacing="1" style="width: 100%; text-align: center;">
+                <tbody><tr>
+                <th scope="col" style="text-align: center;"> Рівень <img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;path-prefix=ru&amp;format=webp" alt="Уровень" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Level.png" data-image-name="Level.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;path-prefix=ru" width="17" height="18" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><br><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/3/3d/Level.png/revision/latest/scale-to-width-down/17?cb=20140115013412&amp;amp;path-prefix=ru"    alt="Рівень"    class=""      data-image-key="Level.png"   data-image-name="Level.png"       width="17"     height="18"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Урон за секунду <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;path-prefix=ru&amp;format=webp" alt="Урон" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Damage.png" data-image-name="Damage.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;path-prefix=ru" width="28" height="26" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><br><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/6/6a/Damage.png/revision/latest/scale-to-width-down/28?cb=20140115013212&amp;amp;path-prefix=ru"    alt="Урон"    class=""      data-image-key="Damage.png"   data-image-name="Damage.png"       width="28"     height="26"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Здоров'я <img src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;path-prefix=ru&amp;format=webp" alt="Прочность" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Hitpoint.png" data-image-name="Hitpoint.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;path-prefix=ru" width="20" height="19" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/e/ed/Hitpoint.png/revision/latest/scale-to-width-down/20?cb=20140115013334&amp;amp;path-prefix=ru"    alt="Прочность"    class=""      data-image-key="Hitpoint.png"   data-image-name="Hitpoint.png"       width="20"     height="19"             &gt;</noscript>
+                </th><th scope="col" style="text-align: center;"> Ціна найму </th><th scope="col" style="text-align: center;"> Ціна покращення </th><th scope="col" style="text-align: center;"> Необхідний рівень <br>лабораторії </th><th scope="col" style="text-align: center;"> Час покращення <img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;path-prefix=ru&amp;format=webp" alt="Время" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Stopwatch.png" data-image-name="Stopwatch.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;path-prefix=ru" width="18" height="21" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c6/Stopwatch.png/revision/latest/scale-to-width-down/18?cb=20140115013556&amp;amp;path-prefix=ru"    alt="Время"    class=""      data-image-key="Stopwatch.png"   data-image-name="Stopwatch.png"       width="18"     height="21"             &gt;</noscript>
+                </th></tr>
+                <tr>
+                <td> 1
+                </td><td> 12
+                </td><td> 20
+                </td><td> 1 000
+                </td><td> N/A
+                </td><td> N/A
+                </td><td> N/A.
+                </td></tr>
+                <tr>
+                <td> 2
+                </td><td> 16
+                </td><td> 24
+                </td><td> 1 500
+                </td><td> 100,000
+                </td><td> 2
+                </td><td> 1 день
+                </td></tr>
+                <tr>
+                <td> 3
+                </td><td> 24
+                </td><td> 29
+                </td><td> 2 000
+                </td><td> 250,000
+                </td><td> 4
+                </td><td> 2 день
+                </td></tr>
+                <tr>
+                <td> 4
+                </td><td> 32
+                </td><td> 35
+                </td><td> 2 500
+                </td><td> 750,000
+                </td><td> 5
+                </td><td> 3 дня
+                </td></tr>
+                <tr>
+                <td> 5
+                </td><td> 46
+                </td><td> 42
+                </td><td> 3 000
+                </td><td> 2,250,000
+                </td><td> 6
+                </td><td> 5 днів
+                </td></tr>
+                <tr>
+                <td> 6
+                </td><td> 60
+                </td><td> 54
+                </td><td> 3 500
+                </td><td> 6,750,000
+                </td><td> 8
+                </td><td> 10 днів
+                </td></tr>
+                </td></tr></tbody></table></div><div id="floating-scrollbar" style="position: fixed; bottom: 0px; height: 30px; overflow-x: auto; overflow-y: hidden; display: block; left: 129.5px; width: 684px;"><div style="border: 1px solid rgb(255, 255, 255); opacity: 0.01; width: 766px;"></div></div></div>
+<hr>
+        <table cellspacing="0" style=" width: 100%; height: 250px;">
+<caption style="text-align:center; color:black;"><b>Кількість <strong>Стінобоїв</strong> для руйнування стіни</a></b>
+</caption>
+<tbody><tr>
+<th scope="col" style="border:0px;">
+</th><th scope="col" style="border:0px; border-right:1px solid rgb(204,204,204);">
+</th><th colspan="11" rowspan="1" scope="col" style="text-align:center; background-color:rgb(242,242,242); border-top:1px solid rgb(204,204,204); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">Рівень стін
+</th></tr>
+<tr>
+<td style="text-align:center;">
+</td><td style="text-align:center; border-right:1px solid rgb(204,204,204);">
+</td><td style="text-align:center; background-color:rgb(250,250,250);"><a href="http://vignette1.wikia.nocookie.net/clashofclans/images/7/74/Wall1.png/revision/latest?cb=20140120071850&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette1.wikia.nocookie.net/clashofclans/images/7/74/Wall1.png/revision/latest/scale-to-width-down/40?cb=20140120071850&amp;path-prefix=ru&amp;format=webp" alt="Wall1.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall1.png" data-image-name="Wall1.png" data-src="http://vignette1.wikia.nocookie.net/clashofclans/images/7/74/Wall1.png/revision/latest/scale-to-width-down/40?cb=20140120071850&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette1.wikia.nocookie.net/clashofclans/images/7/74/Wall1.png/revision/latest/scale-to-width-down/40?cb=20140120071850&amp;amp;path-prefix=ru" 	 alt="Wall1.png"  	class="" 	 	data-image-key="Wall1.png" 	data-image-name="Wall1.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center; background-color:rgb(255,255,255);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/9/97/Wall2.png/revision/latest?cb=20140120071920&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/97/Wall2.png/revision/latest/scale-to-width-down/40?cb=20140120071920&amp;path-prefix=ru&amp;format=webp" alt="Wall2.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall2.png" data-image-name="Wall2.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/97/Wall2.png/revision/latest/scale-to-width-down/40?cb=20140120071920&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/97/Wall2.png/revision/latest/scale-to-width-down/40?cb=20140120071920&amp;amp;path-prefix=ru" 	 alt="Wall2.png"  	class="" 	 	data-image-key="Wall2.png" 	data-image-name="Wall2.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center;background-color:rgb(250,250,250);"><a href="http://vignette1.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest?cb=20140120072453&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette1.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest/scale-to-width-down/40?cb=20140120072453&amp;path-prefix=ru&amp;format=webp" alt="Wall3.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall3.png" data-image-name="Wall3.png" data-src="http://vignette1.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest/scale-to-width-down/40?cb=20140120072453&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette1.wikia.nocookie.net/clashofclans/images/f/f5/Wall3.png/revision/latest/scale-to-width-down/40?cb=20140120072453&amp;amp;path-prefix=ru" 	 alt="Wall3.png"  	class="" 	 	data-image-key="Wall3.png" 	data-image-name="Wall3.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center; background-color:rgb(255,255,255);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/6/62/Wall4.png/revision/latest?cb=20140120072516&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/6/62/Wall4.png/revision/latest/scale-to-width-down/40?cb=20140120072516&amp;path-prefix=ru&amp;format=webp" alt="Wall4.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall4.png" data-image-name="Wall4.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/6/62/Wall4.png/revision/latest/scale-to-width-down/40?cb=20140120072516&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/6/62/Wall4.png/revision/latest/scale-to-width-down/40?cb=20140120072516&amp;amp;path-prefix=ru" 	 alt="Wall4.png"  	class="" 	 	data-image-key="Wall4.png" 	data-image-name="Wall4.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center;background-color:rgb(250,250,250);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c4/Wall5.png/revision/latest?cb=20140120072536&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c4/Wall5.png/revision/latest/scale-to-width-down/40?cb=20140120072536&amp;path-prefix=ru&amp;format=webp" alt="Wall5.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall5.png" data-image-name="Wall5.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c4/Wall5.png/revision/latest/scale-to-width-down/40?cb=20140120072536&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c4/Wall5.png/revision/latest/scale-to-width-down/40?cb=20140120072536&amp;amp;path-prefix=ru" 	 alt="Wall5.png"  	class="" 	 	data-image-key="Wall5.png" 	data-image-name="Wall5.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center; background-color:rgb(255,255,255);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c7/Wall6.png/revision/latest?cb=20140120072553&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c7/Wall6.png/revision/latest/scale-to-width-down/40?cb=20140120072553&amp;path-prefix=ru&amp;format=webp" alt="Wall6.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall6.png" data-image-name="Wall6.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c7/Wall6.png/revision/latest/scale-to-width-down/40?cb=20140120072553&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/c/c7/Wall6.png/revision/latest/scale-to-width-down/40?cb=20140120072553&amp;amp;path-prefix=ru" 	 alt="Wall6.png"  	class="" 	 	data-image-key="Wall6.png" 	data-image-name="Wall6.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center;background-color:rgb(250,250,250);"><a href="http://vignette4.wikia.nocookie.net/clashofclans/images/b/be/Wall7.png/revision/latest?cb=20140120072607&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette4.wikia.nocookie.net/clashofclans/images/b/be/Wall7.png/revision/latest/scale-to-width-down/40?cb=20140120072607&amp;path-prefix=ru&amp;format=webp" alt="Wall7.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall7.png" data-image-name="Wall7.png" data-src="http://vignette4.wikia.nocookie.net/clashofclans/images/b/be/Wall7.png/revision/latest/scale-to-width-down/40?cb=20140120072607&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette4.wikia.nocookie.net/clashofclans/images/b/be/Wall7.png/revision/latest/scale-to-width-down/40?cb=20140120072607&amp;amp;path-prefix=ru" 	 alt="Wall7.png"  	class="" 	 	data-image-key="Wall7.png" 	data-image-name="Wall7.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center; background-color:rgb(255,255,255);"><a href="http://vignette2.wikia.nocookie.net/clashofclans/images/0/06/Wall8.png/revision/latest?cb=20140120072631&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/0/06/Wall8.png/revision/latest/scale-to-width-down/40?cb=20140120072631&amp;path-prefix=ru&amp;format=webp" alt="Wall8.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall8.png" data-image-name="Wall8.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/0/06/Wall8.png/revision/latest/scale-to-width-down/40?cb=20140120072631&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette2.wikia.nocookie.net/clashofclans/images/0/06/Wall8.png/revision/latest/scale-to-width-down/40?cb=20140120072631&amp;amp;path-prefix=ru" 	 alt="Wall8.png"  	class="" 	 	data-image-key="Wall8.png" 	data-image-name="Wall8.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center;background-color:rgb(250,250,250);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/9/93/Wall9.png/revision/latest?cb=20140120072647&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/93/Wall9.png/revision/latest/scale-to-width-down/40?cb=20140120072647&amp;path-prefix=ru&amp;format=webp" alt="Wall9.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall9.png" data-image-name="Wall9.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/93/Wall9.png/revision/latest/scale-to-width-down/40?cb=20140120072647&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/9/93/Wall9.png/revision/latest/scale-to-width-down/40?cb=20140120072647&amp;amp;path-prefix=ru" 	 alt="Wall9.png"  	class="" 	 	data-image-key="Wall9.png" 	data-image-name="Wall9.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center; background-color:rgb(255,255,255);"><a href="http://vignette3.wikia.nocookie.net/clashofclans/images/8/8b/Wall10.png/revision/latest?cb=20140120072703&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette3.wikia.nocookie.net/clashofclans/images/8/8b/Wall10.png/revision/latest/scale-to-width-down/40?cb=20140120072703&amp;path-prefix=ru&amp;format=webp" alt="Wall10.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall10.png" data-image-name="Wall10.png" data-src="http://vignette3.wikia.nocookie.net/clashofclans/images/8/8b/Wall10.png/revision/latest/scale-to-width-down/40?cb=20140120072703&amp;path-prefix=ru" width="40" height="40" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette3.wikia.nocookie.net/clashofclans/images/8/8b/Wall10.png/revision/latest/scale-to-width-down/40?cb=20140120072703&amp;amp;path-prefix=ru" 	 alt="Wall10.png"  	class="" 	 	data-image-key="Wall10.png" 	data-image-name="Wall10.png" 	 	 width="40"  	 height="40"  	 	 	 	&gt;</noscript></a>
+</td><td style="text-align:center;background-color:rgb(250,250,250); border-right:1px solid rgb(204,204,204);"><a href="http://vignette2.wikia.nocookie.net/clashofclans/images/8/86/Wall11.png/revision/latest?cb=20140120072721&amp;path-prefix=ru" class="image image-thumbnail"><img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/86/Wall11.png/revision/latest/scale-to-width-down/40?cb=20140120072721&amp;path-prefix=ru&amp;format=webp" alt="Wall11.png" class="lzyPlcHld  lzyTrns lzyLoaded" data-image-key="Wall11.png" data-image-name="Wall11.png" data-src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/86/Wall11.png/revision/latest/scale-to-width-down/40?cb=20140120072721&amp;path-prefix=ru" width="40" height="44" onload="if(typeof ImgLzy==='object'){ImgLzy.load(this)}"><noscript>&lt;img src="http://vignette2.wikia.nocookie.net/clashofclans/images/8/86/Wall11.png/revision/latest/scale-to-width-down/40?cb=20140120072721&amp;amp;path-prefix=ru" 	 alt="Wall11.png"  	class="" 	 	data-image-key="Wall11.png" 	data-image-name="Wall11.png" 	 	 width="40"  	 height="44"  	 	 	 	&gt;</noscript></a>
+</td></tr>
+<tr>
+<td style="text-align:center; border-bottom:1px solid rgb(204,204,204);">
+</td><td style="text-align:center; border-right:1px solid rgb(204,204,204); border-bottom:1px solid rgb(204,204,204);">
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250);"><b>1</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(255,255,255);"><b>2</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250);"><b>3</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(255,255,255);"><b>4</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250);"><b>5</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(255,255,255);"><b>6</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250);"><b>7</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(255,255,255);"><b>8</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250);"><b>9</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(255,255,255);"><b>10</b>
+</td><td style="text-align:center; border-bottom:1px solid; background-color:rgb(250,250,250); border-right:1px solid rgb(204,204,204);"><b>11</b>
+</td></tr>
+<tr>
+<td colspan="1" rowspan="6" style="width: 60px; text-align:center; background-color:rgb(242,242,242); border-right:1px solid rgb(204,204,204); border-bottom:1px solid rgb(204,204,204); border-left:1px solid rgb(204,204,204);"><b>Рівень <strong class="selflink">стінобоїв</strong> </b>
+</td><td style="width: 30px; text-align:center; border-right:1px solid; border-bottom:1px solid rgb(204,204,204); background-color:rgb(250,250,250);"><b>1</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">5
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">6
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">7
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">9
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">12
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">15
+</td></tr>
+<tr>
+<td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid;"><b>2</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">4
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">4
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">5
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">7
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">9
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">11
+</td></tr>
+<tr>
+<td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid;"><b>3</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">4
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">5
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">6
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">8
+</td></tr>
+<tr>
+<td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid;"><b>4</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">4
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">5
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">6
+</td></tr>
+<tr>
+<td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid;"><b>5</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">4
+</td></tr>
+<tr>
+<td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid;"><b>6</b>
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">1
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204);">2
+</td><td style="text-align:center; background-color:rgb(255,255,255); border-bottom:1px solid rgb(204,204,204);">3
+</td><td style="text-align:center; background-color:rgb(250,250,250); border-bottom:1px solid rgb(204,204,204); border-right:1px solid rgb(204,204,204);">3
+</td></tr></tbody></table>
+        
+                </div>
+              </div>
+              <div class="tab-pane" id="цікавіфакти" style="text-align: justify;">
+                    <p>
+                    <b>Цікаві факти про Стінобоя</b><br>
+                    <ul>
+                                            <img src="/im/giant/giant_go.png" vspace="5" hspace="5" style="float:right" alt="Gigant" width="200px"/>
+                    <li>Стінобій зазнає значних візуальні зміни на рівнях 3, 5 і 6.</li>
+
+                    <li>На рівні 3, бомба в руках у Стінобія стає набагато більша початкової.</li>
+
+                    <li>На рівні 5, звичайна бомба замінюється на таку ж золоту.</li>
+
+                    <li>На рівні 6, Стінобит замість бомби тримає бочку з вибухівкою.</li>
+
+                    <li>Якщо на карті не залишиться стін, Стінобій підриватиме будівлі. Однак пошкодження по будівлях буде значно менша, ніж по стінах.</li>
+
+                    <li>Ви можете мати максимум 120 Стінобоїв у військових таборах останнього рівня. Це число можна збільшити до 137, якщо зарахувати ще 17 Стенобіїв з фортеці клану, яка матиме максимальний рівень модернізації. </li>
+
+                    <li>Стінобої займають 2 місця у військовому таборі з березня 2013 року. До цього поновлення Стінобій займав всього одне місце.</li>
+
+                    <li>Так само є і літаючі Стінобої :-) який сидить у Повітряній кулі.</li>
+                    </ul>
+                    </p>
+              </div>
+              <div class="tab-pane" id="фотовідео">
+            <div class="swell">
+            <h4>Гіги Clash of Clans | Фото та Відео</h4>
+                Фото та відео за участю швидких та веселих Стінобоїв, переглядайте фото та відео, залишайте коментарі ми завжди раді їм.
+                Колекція цих фото та відео буде постійно наповнюватись, слідкуйте за оновленням сайту та наших груп.<br>
+                Дякуємо за те що ви з нами!:)
+            </div>            
+        <div id="gallerybarbarianking" style="display:none;margin-top:10px">
+            <!-- Put this div tag to the place, where the Comments block will be -->
+            
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0001.jpg"
+                 data-image="/im/mems/0001.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0002.jpg"
+                 data-image="/im/mems/0002.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0003.jpg"
+                 data-image="/im/mems/0003.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0004.jpg"
+                 data-image="/im/mems/0004.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0005.jpg"
+                 data-image="/im/mems/0005.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0006.jpg"
+                 data-image="/im/mems/0006.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0007.jpg"
+                 data-image="/im/mems/0007.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">     
+ 
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0008.jpg"
+                 data-image="/im/mems/0008.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">            
+
+            <img alt="Lemon Slice"
+                 src=" /im/mems/0009.jpg"
+                 data-image="/im/mems/0009.jpg"
+                 data-description="This is a Lemon Slice"
+                 style="display:none">              
+        </div>
+              </div>
+        </div>
+    </div>
+    <!-- Карта Персонажів -->
+    <hr>
+    <div class="row" style="margin-top:20px;">
+        <div class="col-md-8">
+            <div class="mapperson">
+              <div class="panel panel-default">
+               <!-- Default panel contents -->
+                  <div class="panel-heading" style="text-align:center"><b>Карта персонажів</b></div>
+               <!-- Table -->
+                  <table class="table" style="size:2;" summary="карта персонажів в Clash of Clans">
+                    <thead>
+                      <tr>
+                        <th style="text-align:center">Категорія</th>
+                        <th></th>
+                        <th></th>
+                        <th>Назви персонажі</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody style="font:small-caption;text-align: center;">
+                      <tr>
+                        <td><b>Герої:</b></td>
+                        <td>
+                            <a href="barbarian-king.html" title="Перейти до опису Короля Варварів">
+                                <img alt="Король Варварів" src="im/icon/barbarian king.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="archer-queen.html" title="Перейти до опису Королеви Лучниць">
+                                <img alt="Королева Лучниць" src="im/icon/archer queen.png" style="height: 50px;">
+                            </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td><b>Казарма:</b></td>
+                        <td>
+                            <a href="barbarian.html" title="Перейти до опису варвара">
+                                <img alt="Варвар" src="im/icon/barbarian.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                            <a href="archer.html" title="Перейти до опису Лучниць">
+                                <img alt="Лучниці" src="im/icon/archer.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="goblin.html" title="Перейти до опису гоблінів">
+                                <img alt="Гоблін" src="im/icon/goblin.png" style="height: 50px;">
+                            </a>  
+                        </td>
+                        <td>
+                            <a href="giant.html" title="Перейти до опису ггігантів">
+                                <img alt="Гігант" src="im/icon/giant.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                            <a href="wall breaker.html" title="Перейти до опису стінобоя">
+                                <img alt="Стінобій" src="im/icon/wall breaker.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                        <td>
+                           <a href="balloon.html" title="Перейти до опису повітряної кулі">
+                                <img alt="Повітряна куля" src="im/icon/Balloon.png" style="height: 50px;">
+                            </a> 
+                        </td>
+                      </tr>
+                      <tr>
+                        <td></td>
+                        <td></td>   
+                        <td>
+                            <a href="wizard.html" title="Перейти до опису Мага">
+                                <img alt="Маг" src="im/icon/wizard.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>Цілителька</td>
+                        <td>Дракон</td>
+                        <td>
+                            <a href="pekka.html" title="Перейти до опису ПЕККИ">
+                                <img alt="ПЕККА" src="im/icon/pekka.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td></td> 
+                      </tr>
+                      <tr>
+                        <td><b>Темна казарма:</b></td>
+                        <td>
+                          <a href="minion.html" title="Перейти до опису Мінйона">
+                                <img alt="Мінйон" src="im/icon/minion.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="hog rider.html" title="Перейти до опису Вершника на кабані">
+                                <img alt="Вершника на кабані" src="im/icon/hog rider.png" style="height: 50px;">
+                            </a>
+                        </td>
+                        <td>Валькірія</td>
+                        <td>Голем</td>
+                        <td>Пекельна гонча</td>
+                        <td>
+                            <a href="witch.html" title="Перейти до опису відьми">
+                                <img alt="Відьма" src="im/icon/witch.png" style="height: 50px;">
+                            </a>
+                        </td> 
+                      </tr>
+                      <tr>
+                        <td><b>Персонажі:</b></td>
+                        <td>Будівельник</td>
+                        <td>Житель</td>
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                        <td></td> 
+                      </tr>
+                      <tr>
+                        <td><b>Заклинання:</b></td>
+                        <td>
+                            <a href="Lightning_Spell.html" title="Перейти до опису заклинання блискавки">
+                                <img alt="Заклинання блискавки" src="im/icon/Lightning_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Healing_Spell.html" title="Перейти до опису заклинання зцілення">
+                                <img alt="Заклинання зцілення" src="im/icon/Healing_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Rage_Spell.html" title="Перейти до опису заклинання ярості">
+                                <img alt="Заклинання ярості" src="im/icon/Rage_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Jump_Spell.html" title="Перейти до опису заклинання стрибка">
+                                <img alt="Заклинання стрибка" src="im/icon/Jump_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Freeze_Spell.html" title="Перейти до опису заклинання заморозки">
+                                <img alt="Заклинання заморозки" src="im/icon/Freeze_Spell.png" style="height: 45px;">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="Santassurprise.html" title="Перейти до опису сюрпризу Санти">
+                                <img alt="Сюрприз від Санти" src="im/icon/Santassurprise.png" style="height: 45px;">
+                            </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+             </div>   
+            </div>  
+        </div>
+        <div id="vk_comments">
+            <div class="col-md-4">
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Низ сайту -->
+
+ 
+    <footer class="footer" id="footer">
+        <div class="row" >
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm"> 
+                <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Розділи сайту:</font></b>
+                        <li>
+                        <a href="index.html">Головна</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3">
+                   <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Цікаві розділи сайту:</font></b>
+                        <li>
+                        <a href="#">Написати нам</a>
+                        </li>
+                        <li>
+                        <a href="#">Галерея</a>
+                        </li>
+                        <li>
+                        <a href="#">Персонажі</a>
+                        </li>
+                        <li>
+                        <a href="#">Розстановки баз</a>
+                        </li>
+                        <li>
+                        <a href="#">Будівлі та споруди</a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+            <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b><font color="white">Завантажити Clash of Clans</font></b>
+                        <li>
+                            <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                        </li>
+                        <li>
+                            <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                        </li>
+                        <li>
+                        <i>
+                            <font color="white">  Поточна версія: 7.156.4 </i>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+            <div class="col-xs-6 col-md-3">
+                    <div class="links-row">
+                    <ul style="list-style-type: none;">
+                        <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                        <li>
+                            <font size="2" color="white"></font>
+                        </li>
+                        <li>
+                            <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                        </li>
+                    </ul>
+                </div>  
+            </div>
+        </div>
+    </footer>
+       <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+    
+
+    <div class="row" >
+        <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+     </div>
+
+    </div> 
+    </div><!-- /container -->
+
+    <!-- JavaScript-ядро Bootstrap
+    ================================================== -->
+    <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+    <script src="/dist/js/bootstrap.js"></script>
+                      
+<script type="text/javascript">
+                jQuery(document).ready(function(){
+                jQuery("#gallerybarbarianking").unitegallery({
+                    tiles_type:"justified",
+                    tile_enable_outline: true,      //enable outline of the tile (works only together with the border)
+          tile_outline_color: "#8B8B8B",    //tile outline color
+          
+          tile_enable_shadow:true,      //enable shadow of the tile
+          tile_shadow_h:1,          //position of horizontal shadow
+          tile_shadow_v:1,          //position of vertical shadow
+          tile_shadow_blur:3,          //shadow blur
+          tile_shadow_spread:2,        //shadow spread
+          tile_shadow_color:"#8B8B8B",    //shadow color
+          
+          tile_enable_action:  true,      //enable tile action on click like lightbox
+          tile_link_newpage: true,      //open the tile link in new page
+    
+          tile_enable_overlay: true,      //enable tile color overlay (on mouseover)
+          tile_overlay_opacity: 0.45,      //tile overlay opacity
+          tile_overlay_color: "#000000",    //tile overlay color
+          
+          tile_enable_icons: true,      //enable icons in mouseover mode
+          tile_show_link_icon: true,      //show link icon (if the tile has a link). In case of tile_as_link this option not enabled
+          tile_space_between_icons: 25,    //initial space between icons, (on small tiles it may change)
+          
+          //tile text panel options:
+          
+          tile_enable_textpanel: true,       //enable textpanel
+          tile_textpanel_source: "desc_title",  //title,desc,desc_title. source of the textpanel. desc_title - if description empty, put title
+          
+          tile_textpanel_padding_top:8,       //textpanel padding top 
+          tile_textpanel_padding_bottom:8,     //textpanel padding bottom
+          tile_textpanel_padding_right: 11,     //cut some space for text from right
+          tile_textpanel_padding_left: 11,     //cut some space for text from left
+          tile_textpanel_bg_opacity: 0.5,       //textpanel background opacity
+          tile_textpanel_bg_color:"#000000",     //textpanel background color
+          
+           //lightbox options:    
+          lightbox_hide_arrows_onvideoplay: true,      //hide the arrows when video start playing and show when stop
+          lightbox_arrows_position: "inside",        //sides, inside: position of the arrows, used on compact type      
+          lightbox_arrows_offset: 10,            //The horizontal offset of the arrows
+          lightbox_arrows_inside_offset: 10,        //The offset from the image border if the arrows placed inside
+          lightbox_arrows_inside_alwayson: false,      //Show the arrows on mouseover, or always on.
+          
+          lightbox_overlay_color:null,          //the color of the overlay. if null - will take from css
+          lightbox_overlay_opacity:0.6,            //the opacity of the overlay. for compact type - 0.6    
+            lightbox_slider_image_border: true,        //enable border around the image (for compact type only)
+            lightbox_slider_image_border_width: 2,      //image border width
+            lightbox_slider_image_border_color: "#ffffff",  //image border color
+            lightbox_slider_image_border_radius: 2,      //image border radius
+      });
+    });
+  </script>
+
+  </body>
+</html>

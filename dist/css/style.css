@@ -222,7 +222,7 @@ h3{
     -webkit-align-items:stretch;
         -ms-flex-align:stretch;
             align-items:stretch;
-    border-bottom: 2.5px solid #757473;
+    border-bottom: 1px solid #757473;
     font-size: 14px;
     font-family: 'Montserrat', sans-serif;
     color: #000;
@@ -442,7 +442,8 @@ svg.github:hover {fill: #4183c4;}
 }
 
 .social_svg{
-    height: 90%;
+    height: 100%;
+    max-width: 45px;
     width: 30px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -464,13 +465,16 @@ svg.github:hover {fill: #4183c4;}
 }
 
 .social_svg svg{
-    width: 30px;
+    min-width: 25px;
+    max-width: 45px;
+    height: auto;
     border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
      -khtml-border-radius: 50%;
     -webkit-box-shadow: 1px 1px 1px 1px #ABABAB;
     box-shadow: 1px 1px 2px 1.2px #A9A9A9;
+    fill: #00255c;
 }
 
 #sinfo{
@@ -500,14 +504,18 @@ svg.github:hover {fill: #4183c4;}
 
 .icon_chapters{
     margin: 10px;
-    height: 40px;
+    height: 35px;
     float: right;
     fill: #00255c;
 }
 
 .icon_chapters svg{
-    width: 40px;
+    width: 35px;
     height: auto;
+}
+
+.one .icon_chapters svg{
+    width: 40px;
 }
 
 .chapters table{
@@ -912,14 +920,14 @@ svg.github:hover {fill: #4183c4;}
 /* Control Setup */
 
 #controls {
-    margin-top: -23%;
+    margin-top: 0%;
 	width: 100%;
 	height: 30px;
 }
 @-moz-document url-prefix()
 {
 	#controls { margin-top: 0px;}
-	.down {margin-top: -10px;}
+	.down {margin-top: -15px;}
 }
 #controls label { 
 	display: none;
@@ -1020,6 +1028,7 @@ svg.github:hover {fill: #4183c4;}
     align-items: center;
     background-color: #efefef;
     width: 55%;
+    height: 90%;
     margin: 1.5%;
     text-align: center;
     box-shadow: 0px 0px 1px #2e2e2e, 0px 0px 3px #5d5c5c;
@@ -1088,7 +1097,7 @@ svg.github:hover {fill: #4183c4;}
     -webkit-align-items:center;
         -ms-flex-align:center;
             align-items:center;
-    height: 60%; 
+    height: 60%;
 }
 .downfirst{
      display: -webkit-box;

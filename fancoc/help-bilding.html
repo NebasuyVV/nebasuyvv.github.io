@@ -1,0 +1,556 @@
+<!--
+The MIT License (MIT)
+
+Copyright (c) Mon Jun 29 2015 Nebasuy Vadym V.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
+the Software, and to permit persons to whom the Software is furnished to do so,
+subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
+COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
+IN AN ACTION OF CONTRACT, TORTOR OTHERWISE, ARISING FROM, OUT OF OR IN
+CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+-->
+
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta, title, CSS, favicons, etc. -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Короткий опис сторінки">
+        <meta name="keywords" content="Ключові слова до сторінки">
+        <meta name="author" content="Автор Небасуй В.В. - (Autor - Nebasuy Vadym V.)">
+        <link rel="icon" href="favicon.ico">
+        <title>Clash of Clans</title>
+
+        <!-- CSS-ядро Bootstrap -->
+        <link href="dist/css/bootstrap.css" rel="stylesheet">
+        <!-- Теми Bootstrap -->
+        <link href="dist/css/bootstrap-theme.css" rel="stylesheet">
+        <!-- Підібрані стилі саме для цього шаблона -->
+        <link href="dist/css/theme.css" rel="stylesheet">
+        <!-- Це чисто для цілей налагодження. Вам не потрібно копіювати цих два рядки! -->
+        <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- Лічильники Яндекс та Гугл -->
+        <!-- Yandex.Metrika counter --><script type="text/javascript">(function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter32524125 = new Ya.Metrika({id:32524125, webvisor:true, clickmap:true}); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks");</script><noscript><div><img src="//mc.yandex.ru/watch/32524125" style="position:absolute; left:-9999px;" alt="" /></div></noscript><!-- /Yandex.Metrika counter -->
+    </head>
+
+    <body role="document">
+        <!-- Фіксована навігаційна панель -->
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Відкрити меню</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="http://clashofclans.cc.ua/">Clash of Clans</a>
+                </div>
+                <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="hidden-sm hidden-md"><a href="index.html">Головна</a></li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Персонажі <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Герої</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Король Варварів </a></li>
+                                        <li> <a tabindex="-1" href="#">Королева Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Варвар</a></li>
+                                        <li> <a tabindex="-1" href="#">Лучниця</a></li>
+                                        <li> <a tabindex="-1" href="#">Гоблін</a></li>
+                                        <li> <a tabindex="-1" href="#">Гігант</a></li>
+                                        <li> <a tabindex="-1" href="#">Стінобій</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна куля</a></li>
+                                        <li> <a tabindex="-1" href="#">Маг</a></li>
+                                        <li> <a tabindex="-1" href="#">Цілителька</a></li>
+                                        <li> <a tabindex="-1" href="#">Дракон</a></li>
+                                        <li> <a tabindex="-1" href="#">П.Е.К.К.А</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Темна казарма</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Міньйон</a></li>
+                                        <li> <a tabindex="-1" href="#">Вершник на кабані</a></li>
+                                        <li> <a tabindex="-1" href="#">Валькірія</a></li>
+                                        <li> <a tabindex="-1" href="#">Голем</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна гонча</a></li>
+                                        <li> <a tabindex="-1" href="#">Відьма</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#"> Будівельник</a></li>
+                                <li><a href="#"> Житель</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class = "dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Будівлі та споруди <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Захисні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Пушка</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня луків</a></li>
+                                        <li> <a tabindex="-1" href="#">Мортира</a></li>
+                                        <li> <a tabindex="-1" href="#">Повітряна оборна</a></li>
+                                        <li> <a tabindex="-1" href="#">Башня мага</a></li>
+                                        <li> <a tabindex="-1" href="#">Арбалет</a></li>
+                                        <li> <a tabindex="-1" href="#">Таємна Тесла</a></li>
+                                        <li> <a tabindex="-1" href="#">Пекельна башня</a></li>
+                                        <li> <a tabindex="-1" href="#">Чистильщик</a></li>
+                                        <li> <a tabindex="-1" href="#">Стіна</a></li>
+                                        <li> <a tabindex="-1" href="#">Пастки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Військові</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Військовий лагер</a></li>
+                                        <li> <a tabindex="-1" href="#">Казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Темна казарма</a></li>
+                                        <li> <a tabindex="-1" href="#">Лабораторія</a></li>
+                                        <li> <a tabindex="-1" href="#">Фабрика заклинань</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Короля Варварів</a></li>
+                                        <li> <a tabindex="-1" href="#">Алтар Королеви Лучниць</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Ресурсні</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Золота шахта</a></li>
+                                        <li> <a tabindex="-1" href="#">Збирач еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Свердловина чорного еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище золота</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище еліксиру</a></li>
+                                        <li> <a tabindex="-1" href="#">Сховище чорного еліксиру</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-submenu" role="menu">
+                                    <a href="#"> Інші</a>
+                                    <ul class="dropdown-menu">
+                                        <li> <a tabindex="-1" href="#">Будинок будівельника</a></li>
+                                        <li> <a tabindex="-1" href="#">Декорації</a></li>
+                                        <li> <a tabindex="-1" href="#">Фортеця клану</a></li>
+                                        <li> <a tabindex="-1" href="#">Перешкоди</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Ратуша (Town Hall)</a></li>
+                            </ul>
+                        </li>
+                        <li class="hidden-sm hidden-md"><a href="schems.html">Розстановки</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Новини та галерея<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#">Новини</a></li>
+                                <li><a href="#">Цікаві бази</a></li>
+                                <li><a href="#">Фан-арт</a></li>
+                                <li><a href="#">Меми</a></li>
+                                <li><a href="#">Інше</a></li>
+                            </ul>
+                        </li>
+                        <li class="active hidden-sm hidden-md"><a href="help.html">Допомога</a></li>
+                        <li class="hidden-sm hidden-md"><a href="contact.html">Контакти</a></li>
+                        <li>
+                             <div> <img style="height: 45px; width: 110px;" src="im/coc_logo.png" alt="Clash of Clans Logo" /></div>
+                             <!-- Блок переключення мов
+                               <div class="flag" style="vertical-align:middle">
+                                <a href="">
+                                <img src="im/icon/flag_ua.png" name="flagua" width=30px height=auto alt="Clash of Clans на українській"></a>
+                                <a href="#" onMouseOver="document.flagru.src='im/icon/flag_ru.png'" onMouseOut="document.flagru.src='im/icon/flag_ru0.png'">
+                                <img src="im/icon/flag_ru0.png" name="flagru" width=30px height=auto alt="Clash of Clans на русском">
+                                </a>
+                                <a href="#" onMouseOver="document.flaggb.src='im/icon/flag_gb.png'" onMouseOut="document.flaggb.src='im/icon/flag_gb0.png'">
+                                <img src="im/icon/flag_gb0.png" name="flaggb" width=30px height=auto alt="Clash of Clans in english">
+                                </a>
+                            </div>
+                            -->
+                        </li>
+                    </ul>
+                    <!--   <form class="navbar-form navbar-left" role="search">
+<div class="form-group" style="vertical-align:middle;">
+<input type="text" class="form-control" placeholder="Уведіть запит.." style="width: 155px;">
+</div>
+<button type="submit" class="btn btn-primary btn-lg glyphicon glyphicon-search" style="margin-top: auto; vertical-align:middle; padding: 2.5% 2.5%"></button>
+</form> -->
+
+                </div><!--/.nav-collapse -->
+            </div>
+        </nav>
+        <!-- Кінець верхньої навігаційної панелі -->
+        <div class="container">
+            <!-- Початок блоку із слайдером -->
+            <div class="row" style="margin-top: 60px;">
+                <div class="col-md-4" style="text-align: center;">
+                      <div class="row">                       
+                         <div class="col-md-6" style="text-align: left;">
+                              <h2><b> Допомога </b></h2>                        
+                         </div>
+                         <div class="col-md-6" style="text-align: right"> 
+                              <img alt="COC" src="im/icon/FAQCOC.png" />                          
+                         </div>
+                      </div>
+                    <hr>
+                    <div class="btn-group-vertical" role="group" aria-label="true">
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-faq.html'" >Найчастіші запитання</button>
+                        <button type="button" class="btn btn-success " onclick="window.location.href='help-clanswar.html'" >Війни кланів</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-atak.html'" >Атака і оборона</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-first.html'" >Самий початок</button>
+                        <button type="button" class="btn btn-success" aria-pressed="true" onclick="window.location.href='help-res.html'" >Ресурси, кристали та опалата</button>
+                        <button type="button" class="btn btn-success active" aria-pressed="true"  onclick="window.location.href='help-bilding.html'" >Будівлі та споруди</button>
+                        <button type="button" class="btn btn-success"  onclick="window.location.href='help-clansunit.html'" >Кланові війська</button>
+                        <button type="button" class="btn btn-success" onclick="window.location.href='help-helps.html'" >Підключення, та зміна поселень</button>
+                    </div>
+                    <div class="row"  style="text-align: center;">
+                         <img alt="barbarian_help" src="im/helps/barbarian_help.png" style="margin-top:5px;text-align:center;margin-top: 15px; height: 350px;"/> 
+                    </div>
+                </div>
+                
+                <div class="col-md-8">
+<!------- Блок будівлі ------->
+            <!--      <div id="faq" class="collapse"> -->
+                   <div id="accordinOne" class="collapsed">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                       Як скасувати поліпшення?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    Будь ласка, пам'ятайте, що якщо ви відкидаєте поліпшення, то вам повернеться тільки половина його вартості. Після того як поліпшення буде скасовано, повернути його або отримати гроші назад не вийде. Подумайте гарненько, чи дійсно ви хочете скасувати поліпшення, перш ніж слідувати інструкціям.
+
+Також врахуйте, що при скасуванні поліпшення ви завжди отримаєте назад половину ресурсів, але не кристали. Навіть якщо ви використовували кристали для початку поліпшення.
+Виберіть поліпшення і торкніться «Скасування»
+Підтвердіть скасування, натиснувши «Окей». Нагадую, що вам повернеться тільки 50% ресурсів, витрачених на поліпшення.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        Як продавати будівлі або предмети?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    На жаль в даний момент можливості продавати або видаляти будівлі в грі немає, але ви можете їх переміщати. Втім, ви можете продати декорації за зниженою ціною. Просто клацніть по предмету, який хочете продати, і виберіть «продати».
+
+Будь ласка, пам'ятайте, що якщо ви продасте предмет, ви не отримаєте назад повної його ціни. Тільки її частина повернеться на рахунок, як буде вказано у спливаючому повідомленні.
+
+Наприклад, флюгер можна купити за 10 000 еліксиру, а продати за 1000.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        Скільки коштують хатини будівельників?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    У кожній хатині живе один будівельник. Будівельники дуже важливі для гри, адже вони будують, покращують і відновлюють будови.
+
+Ціна будівельника збільшується з покупкою кожного наступного. Нижче наведені ціни:
+Перший будівельник: Безкоштовний, відразу після початку гри
+Другий будівельник: 250 кристалів (купується під час навчання)
+Третій будівельник: 500 кристалів
+Четвертий будівельник: 1000 кристалів
+П'ятий будівельник: 2000 кристалів
+Велика кількість будівельників дає значні переваги в грі, тому ціни і зростають.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingfour">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                        Чому мені потрібен будівельник для поліпшення стін?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
+                                <div class="panel-body">
+                                    У будівельників є чарівний молот, створений спеціально для будівництва та поліпшення стін. Тому для поліпшення стін потрібен вільний будівельник, навіть незважаючи на те, що поліпшення відбувається миттєво.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                        Після початку поліпшення лабораторії солдати / заклинання, які покращилися, зникли!
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                        Якщо у вас йде процес поліпшення військ або заклинань і ви вирішили поліпшити лабораторію, поліпшення солдатів або заклинань буде призупинено до завершення процесу поліпшення. Не хвилюйтеся - все закінчиться, коли прийде час.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                        Ціна поліпшення тепер менше, ніж я колись заплатив. Можна повернути гроші?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                        Clash - постійно мінлива гра, вона стає краще і складніше. Точно так само, як і з покупками в реальному житті, іноді ціни в Clash знижуються, щоб зберегти економічний баланс. Будь-які зміни в цінах впроваджуються тільки після серйозних розрахунків, щоб переконатися, що це правильне рішення, яке піде на користь гравцям.
+
+В даний момент всі ціни і поліпшення однакові для всіх. Тому ми не можемо повертати гравцям вартість минулих покупок.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSeven">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                        Навколо пасток є безпечна зона?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                                <div class="panel-body">
+                                       На відміну від нормальних будівель, навколо декорацій, бомб, веж Тесла і пасток «безпечної зони» немає.
+
+Безпечна зона - це зазначене білим місце навколо будівлі, де не можна розгорнути війська.
+
+Ви повинні дуже добре подумати, куди поставити пастку або декорацію. Якщо ви поставите їх поза села або далеко від будівель і стін так, що між ними залишатимуться порожні місця, противники зможуть перекинути туди свої війська.
+                                </div>
+                            </div>
+                        </div>                        
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading8">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                        Ніхто на мене не нападає. В чому справа?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading8">
+                                <div class="panel-body">
+                                       Якщо ваша захист сильна, сховища пустують, а трофеїв мало, справді може статися так, що на вашу село не стануть нападати навіть з неактивним щитом. Але можу вас запевнити: коли-небудь на вас все одно нападуть.
+                                </div>
+                            </div>
+                        </div>                                                
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading9">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                        Чому після скасування поліпшення я отримую назад лише 50%?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse9" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading9">
+                                <div class="panel-body">
+                                        Це зниження необхідно для запобігання шахрайства. Якби всі гравці могли скасовувати поліпшення, скажімо, через тиждень, при цьому повністю одержуючи назад золото або еліксир, то ці ресурси (яких може бути дуже багато) під час поліпшення були б заховані від супротивників на цей період часу. Така хитрість дозволяла б гравцям приховувати видобуток від загарбників скільки завгодно, без будь-яких додаткових складнощів і витрат, і отримувати ресурси назад в будь-який момент. Ось чому при скасуванні повертається тільки половина ресурсів.
+
+Плюс, ми додали в гру кілька ступенів підтвердження, так що перед початком поліпшення гравця кілька разів запитують, чи дійсно він хоче зробити це. Те ж саме відбувається при скасуванні поліпшення.
+
+Якщо ви витрачаєте на поліпшення алмази / самоцвіти, то при початку поліпшення вони перетворюються в потрібний ресурс (золото, еліксир, чорний еліксир). Але назад в алмази ресурси перетворитися не можуть, тому при скасуванні поліпшення відшкодування ви отримаєте у вигляді ресурсів.
+                                </div>
+                            </div>
+                        </div>                           
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading10">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        Мені не вистачає ресурсів / будівельників, щоб поліпшити хоч щось
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading10">
+                                <div class="panel-body">
+                                    Якщо ви хочете продовжити покращувати будівлі, а всі будівельники зайняті, то у вас є два варіанти: витратити кристали і миттєво завершити будівництво, звільнивши тим самим будівельника, або купити за кристали ще одну хатину будівельника (якщо, звичайно, ви ще не перевищили ліміт у 5 хатин).
+У прикладі, військовий табір коштує 2500 еліксиру, а в елікісрохраніліще порожньо. Ви побачите повідомлення з питанням, чи не хочете ви купити відсутній еліксир за кристали.
+Погодившись, ви витратите кристали і тут же почнете поліпшення. Кристали миттєво звернуться до відсутні ресурси (у нашому випадку еліксир), і почнеться поліпшення.
+Однак якщо всі будівельники зайняті, ви отримаєте інше повідомлення: питання, чи хочете ви витратити кристали, щоб звільнити будівельника? Якщо ви виберете «так», кристали будуть списані з рахунку, і почнеться поліпшення.
+Вибравши «ні», ви не витратите кристали, і поліпшення не почнеться. Кристали, які ви витратили на відсутні ресурси, не будуть повернені, зате куплені ресурси залишаться у вас.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading11">
+                                <h4 class="panel-title">
+                                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                        Чому я більше не можу поліпшити стіни за еліксир?
+                                    </a>
+                                </h4>
+                            </div>
+                            <div id="collapse11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading11">
+                                <div class="panel-body">
+                                    З зимового поновлення 2014 покращувати стіни за еліксир можна тільки починаючи з 8 рівня. Щоб переконатися, що у всіх досить ресурсів, ми додали рівень 12 Золотий шахти і Збирача еліксиру, а ще - більше доступу до Темного еліксиру.
+ 
+Для того, щоб поліпшити цілий ряд стіни за допомогою еліксиру, всі ділянки стіни повинні бути 8 рівня або вище. Якщо хоч один ділянку стіни знаходиться на 7 рівні або менше, гра буде пропонувати улучити ряд за золото до тих пір, поки всі ділянки не досягнуть 8 рівня.
+ 
+Для отримання більш повної інформації, почитайте наші статті на форумі.
+                                </div>
+                            </div>
+                        </div>                                                                      
+                    </div>
+                </div>
+          <!--    </div>   -->       
+<!-------- Кінець блоку із найчастішими питаннями ----->                     
+                    
+                    
+            <div class="thumbnail">
+                <img src="im/baner.jpg" alt="Банер" />
+            </div>
+                </div>
+            </div>
+
+            <!-- банер сайту -->
+
+
+
+            <!-- Низ сайту -->
+
+            <footer class="footer" id="footer">
+                <div class="row" >
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Розділи сайту:</font></b>
+                                <li>
+                                    <a href="index.html">Головна</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Цікаві розділи сайту:</font></b>
+                                <li>
+                                    <a href="#">Написати нам</a>
+                                </li>
+                                <li>
+                                    <a href="#">Галерея</a>
+                                </li>
+                                <li>
+                                    <a href="#">Персонажі</a>
+                                </li>
+                                <li>
+                                    <a href="#">Розстановки баз</a>
+                                </li>
+                                <li>
+                                    <a href="#">Будівлі та споруди</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3 hidden-xs hidden-sm">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b><font color="white">Завантажити Clash of Clans</font></b>
+                                <li>
+                                    <a href="https://play.google.com/store/apps/details?id=com.supercell.clashofclans&hl=ua" target="_blank"> <img height="40px" width="auto" src="im/footer/playstore.png" alt="Скачати Clash of Clans в Google Play">
+                                        </li>
+                                <li>
+                                    <a href="https://itunes.apple.com/ru/app/clash-of-clans/id529479190?mt=8" target="_blank"> <img  height="40px" width="auto" src="im/footer/appstore.png" alt="Скачати Clash of Clans в App Store"> </a>
+                                </li>
+                                <li>
+                                    <i>
+                                        <font color="white">  Поточна версія: 7.156.4 </i>
+                                        </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <div class="links-row">
+                            <ul style="list-style-type: none;">
+                                <b> <font color="white">Зв'язатися з нами:</font></b>
+                        <li>
+                        <a href="https://plus.google.com/u/0/communities/115692132574241833613" target="_blank" onMouseOver="document.googleplus.src='im/icon/googleplus1.png'" onMouseOut="document.googleplus.src='im/icon/googleplus0.png'">
+                            <img src="im/icon/googleplus0.png" name="googleplus" width=31 height=31 alt="google plus clash of clans ukraine">
+                        </a>
+                        <a href="https://www.facebook.com/coc.ukraine" target="_blank" onMouseOver="document.facebook.src='im/icon/facebook1.png'" onMouseOut="document.facebook.src='im/icon/facebook0.png'">
+                            <img src="im/icon/facebook0.png" name="facebook" width=31 height=31 alt="facebook clash of clans ukraine">
+                        </a>
+                        <a href="https://twitter.com/C_of_C_UKRAINE" target="_blank" onMouseOver="document.twitter.src='im/icon/twitter1.png'" onMouseOut="document.twitter.src='im/icon/twitter0.png'">
+                            <img src="im/icon/twitter0.png" name="twitter" width=31 height=31 alt="twitter clash of clans ukraine">
+                        </a>
+                        <a href="http://vk.com/c_of_c_ukraine" target="_blank" onMouseOver="document.vkontakte.src='im/icon/vk1.png'" onMouseOut="document.vkontakte.src='im/icon/vk0.png'">
+                            <img src="im/icon/vk0.png" name="vkontakte" width=31 height=31 alt="Vkontakte clash of clans ukraine">
+                        </a>
+                        <a href="https://www.youtube.com/CofCUkraine" target="_blank" onMouseOver="document.youtube.src='im/icon/YouTube2.png'" onMouseOut="document.youtube.src='im/icon/YouTube0.png'">
+                            <img src="im/icon/YouTube0.png" name="youtube" width=31 height=31 alt="youtube clash of clans ukraine">
+                        </a>
+                        <p></p> 
+                        </li>
+                                <li>
+                                    <font size="2" color="white">Автор сайту - Небасуй Вадим</font>
+                                </li>
+                                <li>
+                                    <font size="2" color="white">Copyright © 2015 «Clash of Clans|Ukraine»</font>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Підключення догори -->
+            </footer>
+            <div id="scrollup"><img alt="Прокрутить вверх" src="im/up.png"></div>
+
+            <div class="row" >
+                <div class="col-xs-12" style="width: auto; height: 5px; background-color: #0000;">
+                </div>
+            </div>
+        </div><!-- /container -->
+
+        <!-- JavaScript-ядро Bootstrap
+================================================== -->
+        <!-- Розміщуйте підключення JavaScript в кінці документа щоб сторінки завантажувались швидше -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="dist/js/bootstrap.js"></script>
+        <script src="../../assets/js/docs.js"></script>
+        <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+        <!-- viewport для браузера IE10, це зроблено щоб виправити помилку для Surface/desktop Windows 8 -->
+        <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+    </body>
+</html>
