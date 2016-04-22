@@ -718,6 +718,7 @@ svg.github:hover {fill: #4183c4;}
 	height: 30px;
 	opacity: 0.3;
 	filter: alpha(opacity=30);
+    cursor: pointer;
 }
 
 
